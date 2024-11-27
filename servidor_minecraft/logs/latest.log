@@ -1,0 +1,776 @@
+[19:52:14] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[19:52:17] [Worker-Main-1/ERROR]: Couldn't load tag ddo:ray_permeable as it is missing following references: minecraft:grass (from file/deep-dark-enhanced-v1-2)
+[19:52:20] [ServerMain/INFO]: Loaded 1198 recipes
+[19:52:20] [ServerMain/INFO]: Loaded 1520 advancements
+[19:52:20] [ServerMain/WARN]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:block] are present in data pack: ddo:ray_permeable
+[19:52:20] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[19:52:20] [Server thread/INFO]: Loading properties
+[19:52:20] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
+[19:52:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:52:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:52:22] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[19:52:22] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[19:52:22] [Server thread/INFO]: Default game type: SURVIVAL
+[19:52:22] [Server thread/INFO]: Generating keypair
+[19:52:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:52:22] [Server thread/INFO]: Using epoll channel type
+[19:52:22] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[19:52:22] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loading 3 libraries... please wait
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-api/4.14.0/adventure-api-4.14.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-key/4.14.0/adventure-key-4.14.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.14.0/adventure-text-serializer-gson-4.14.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.14.0/adventure-text-serializer-json-4.14.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.0/adventure-text-serializer-bungeecord-4.3.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.0/adventure-text-serializer-legacy-4.13.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loading 10 libraries... please wait
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/springframework/spring-expression/6.0.6/spring-expression-6.0.6.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/commons-codec/commons-codec/1.11/commons-codec-1.11.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/dev/jorel/commandapi-bukkit-shade/9.3.0/commandapi-bukkit-shade-9.3.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.15.0/adventure-text-minimessage-4.15.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-api/4.15.0/adventure-api-4.15.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-key/4.15.0/adventure-key-4.15.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-plain/4.15.0/adventure-text-serializer-plain-4.15.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-ansi/4.15.0/adventure-text-serializer-ansi-4.15.0.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/ansi/1.0.3/ansi-1.0.3.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.13.1/adventure-text-serializer-gson-4.13.1.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
+[19:52:23] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/MSP-2.5/servidor_minecraft/libraries/gs/mclo/java/2.2.1/java-2.2.1.jar
+[19:52:23] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[19:52:26] [Server thread/WARN]: Legacy plugin GeyserUtils v1.0-SNAPSHOT does not specify an api-version.
+[19:52:26] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.13
+[19:52:26] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.1.1
+[19:52:26] [Server thread/INFO]: [ViaVersion] ViaVersion 5.1.1 is now loaded. Registering protocol transformers and injecting...
+[19:52:27] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[19:52:27] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[19:52:27] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.2-3e052553
+[19:52:27] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[19:52:27] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
+[19:52:27] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.2.0-SNAPSHOT-679
+[19:52:29] [Server thread/INFO]: [ModelEngine] Loading server plugin ModelEngine vR4.0.7
+[19:52:29] [Server thread/INFO]: [NBTAPI] Loading server plugin NBTAPI v2.13.1
+[19:52:29] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_20_R3! Trying to find NMS support
+[19:52:29] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R3' loaded!
+[19:52:29] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'NBTAPI' to create a bStats instance!
+[19:52:29] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.3-SNAPSHOT (b112-0360721)
+[19:52:29] [Thread-7/WARN]: [NBTAPI] [NBTAPI] The NBT-API in 'NBTAPI' seems to be outdated!
+[19:52:29] [Thread-7/WARN]: [NBTAPI] [NBTAPI] Current Version: '2.13.1' Newest Version: 2.14.0'
+[19:52:29] [Thread-7/WARN]: [NBTAPI] [NBTAPI] Please update the NBTAPI or the plugin that contains the api(nag the mod author when the newest release has an old version, not the NBTAPI dev)!
+[19:52:29] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[19:52:29] [Server thread/INFO]: [floodgate] Took 586ms to boot Floodgate
+[19:52:29] [Server thread/INFO]: [Oraxen] Loading server plugin Oraxen v1.172.0
+[19:52:29] [Server thread/INFO]: [GeyserModelEngine] Loading server plugin GeyserModelEngine v1.0-SNAPSHOT
+[19:52:29] [Server thread/INFO]: [GeyserUtils] Loading server plugin GeyserUtils v1.0-SNAPSHOT
+[19:52:29] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.5.0-SNAPSHOT
+[19:52:30] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[19:52:30] [Server thread/WARN]: [Geyser-Spigot] The extension GeyserModelEnginePackGenerator requested the Base API version 1.0.0, which is deprecated in favor of specifying the Geyser API version. Please update the extension, or contact its developer.
+[19:52:30] [Server thread/WARN]: [Geyser-Spigot] The extension GeyserUtils requested the Base API version 1.0.0, which is deprecated in favor of specifying the Geyser API version. Please update the extension, or contact its developer.
+[19:52:30] [Server thread/INFO]: [Geyser-Spigot] Enabled extension GeyserModelEnginePackGenerator
+[19:52:30] [Server thread/INFO]: [Geyser-Spigot] Enabled extension GeyserUtils
+[19:52:30] [Server thread/INFO]: [Geyser-Spigot] Loaded 2 extension(s)
+[19:52:31] [Server thread/WARN]: [Geyser-Spigot] Extension GeyserModelEnginePackGenerator loads class me.zimzaza4.geyserutils.geyser.GeyserUtils from an external source. This can change at any time and break the extension, additionally to potentially causing unexpected behaviour!
+[19:52:31] [Server thread/INFO]: [BetterRevive] Loading server plugin BetterRevive v0.9.1-BETA
+[19:52:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:52:31] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0-SNAPSHOT-679
+[19:52:31] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR4.0.7
+[19:52:31] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:52:31] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:52:31] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:52:31] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:52:31] [Server thread/INFO]: Preparing level "world"
+[19:52:32] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[19:52:32] [Server thread/INFO]: Time elapsed: 273 ms
+[19:52:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[19:52:32] [Server thread/INFO]: Time elapsed: 103 ms
+[19:52:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[19:52:32] [Server thread/INFO]: Time elapsed: 66 ms
+[19:52:32] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.13
+[19:52:32] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.13" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[19:52:32] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[19:52:33] [Server thread/INFO]: Preparing start region for dimension minecraft:papuworld
+[19:52:34] [Server thread/INFO]: Time elapsed: 1252 ms
+[19:52:34] [Server thread/INFO]: [Multiverse-Core] 4 - World(s) loaded.
+[19:52:34] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[19:52:34] [Server thread/INFO]: [Multiverse-Core] Version 4.3.13 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[19:52:34] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.1.1
+[19:52:34] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
+[19:52:34] [Server thread/INFO]: [ModelEngine] [S] Compatibility applied: ViaVersion
+[19:52:34] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.6.2-3e052553
+[19:52:35] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.4)...
+[19:52:35] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[19:52:37] [Server thread/INFO]: [MythicMobs] Mythic ProtocolLib Support has been enabled!
+[19:52:37] [Server thread/INFO]: [MythicMobs] Base directory /workspaces/MSP-2.5/servidor_minecraft/plugins/MythicMobs/data
+[19:52:37] [Server thread/INFO]: [MythicMobs] Module directory /workspaces/MSP-2.5/servidor_minecraft/plugins/MythicMobs/data/worlds
+[19:52:39] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[19:52:40] [Server thread/INFO]: [MythicMobs] Loading Items...
+[19:52:40] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[19:52:40] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[19:52:40] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[19:52:40] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[19:52:40] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[19:52:40] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Mechanic metaskill
+[19:52:40] [Server thread/WARN]: [MythicMobs] --| Mob: PIGLIN_MECH_MOUNT | File: /workspaces/MSP-2.5/servidor_minecraft/plugins/MythicMobs/mobs/piglin_mech_mount.yml
+[19:52:40] [Server thread/WARN]: [MythicMobs] --| Error Message: Could not find MetaSkill PIGLINMECH_MOUNT_targetting_system
+[19:52:40] [Server thread/WARN]: [MythicMobs] --| Mechanic Line: skill{s=PIGLINMECH_MOUNT_targetting_system}
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 37 mobs.
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 134 skills.
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[19:52:40] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[19:52:40] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[19:52:40] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs Premium v5.6.2 ( build 3e052553 ) has been successfully loaded!
+[19:52:41] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.
+[19:52:41] [Server thread/INFO]: [ModelEngine] [S] Compatibility applied: MythicMobs
+[19:52:41] [Server thread/INFO]: [NBTAPI] Enabling NBTAPI v2.13.1
+[19:52:41] [Server thread/INFO]: [NBTAPI] Checking bindings...
+[19:52:41] [Server thread/INFO]: [NBTAPI] All Classes were able to link!
+[19:52:41] [Server thread/INFO]: [NBTAPI] All Methods were able to link!
+[19:52:41] [Server thread/INFO]: [NBTAPI] Running NBT reflection test...
+[19:52:41] [Server thread/INFO]: [NBTAPI] Success! This version of NBT-API is compatible with your server.
+[19:52:41] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.3-SNAPSHOT (b112-0360721)
+[19:52:42] [Server thread/INFO]: [Oraxen] Enabling Oraxen v1.172.0
+[19:52:42] [Server thread/INFO]: Oraxen | Version v1_20_R3 has been detected.
+[19:52:42] [Server thread/INFO]: Oraxen | Oraxen will use the NMSHandler for this version.
+[19:52:42] [Server thread/INFO]: Oraxen | Papers block-updates.disable-noteblock-updates is not enabled.
+[19:52:42] [Server thread/INFO]: Oraxen | It is recommended to enable this setting for improved performance and prevent bugs with noteblocks
+[19:52:42] [Server thread/INFO]: Oraxen | Otherwise Oraxen needs to listen to very taxing events, which also introduces some bugs
+[19:52:42] [Server thread/INFO]: Oraxen | You can enable this setting in ServerFolder/config/paper-global.yml
+
+[19:52:42] [Server thread/INFO]: Oraxen | Papers block-updates.disable-tripwire-updates is not enabled.
+[19:52:42] [Server thread/INFO]: Oraxen | It is recommended to enable this setting for improved performance and prevent bugs with tripwires
+[19:52:42] [Server thread/INFO]: Oraxen | Otherwise Oraxen needs to listen to very taxing events, which also introduces some bugs
+[19:52:42] [Server thread/INFO]: Oraxen | You can enable this setting in ServerFolder/config/paper-global.yml
+
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for farmer_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for explorer_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for knight_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for lord_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for prince_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for king_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for hero_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for god_tag does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for heart does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for logo does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for menu_banner does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for menu_recipe does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for menu_items does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for menu_items_overlay does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for required does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_1 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_2 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_4 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_8 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_16 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_32 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_64 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_128 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_256 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_512 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for shift_1024 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_1 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_2 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_4 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_8 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_16 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_32 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_64 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_128 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_256 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_512 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:42] [Server thread/INFO]: Oraxen | The texture specified for neg_shift_1024 does not exist. This will break all your glyphs.
+[19:52:42] [Server thread/INFO]: Oraxen | It has been temporarily set to a placeholder image. You should edit this in the glyph config.
+[19:52:43] [Server thread/INFO]: Oraxen | Slicing gui-textures to 1.20.2-format...
+[19:52:43] [Server thread/INFO]: Oraxen | Successfully sliced gui-textures for 1.20.2
+[19:52:43] [Server thread/INFO]: Oraxen | Converting global lang file to individual language files...
+[19:52:43] [Server thread/INFO]: Oraxen | Verifying formatting for textures and models...
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/grape.json: default/grape
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/onyx.json: default/onyx
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_boots.json: default/armors/emerald_boots
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_boots.json: default/armors/emerald_boots
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/amethyst.json: default/amethyst
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/daffodil.json: default/flowers/daffodil
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_helmet.json: default/armors/emerald_helmet
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_helmet.json: default/armors/emerald_helmet
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_boots.json: default/armors/ruby_boots
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_boots.json: default/armors/ruby_boots
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_helmet.json: default/armors/obsidian_helmet
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_helmet.json: default/armors/obsidian_helmet
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/iron_serpe.json: default/iron_serpe
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/dailily.json: default/flowers/dailily
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/amethyst_hammer.json: default/amethyst_hammer
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_pickaxe.json: default/obsidian_pickaxe
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/onyx_hammer.json: default/onyx_hammer
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby.json: default/ruby
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/amethyst_ore.json: default/amethyst_ore
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/orax_ore.json: default/orax_ore
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/grape_seeds.json: default/grape_seeds
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/brunnera.json: default/flowers/brunnera
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/glass_sword.json: default/glass_sword
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_chestplate.json: default/armors/obsidian_chestplate
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_chestplate.json: default/armors/obsidian_chestplate
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_chestplate.json: default/armors/ruby_chestplate
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_chestplate.json: default/armors/ruby_chestplate
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/miner_sandwitch.json: default/sandwitch
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/gold_cog.json: default/gold_cog
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/onyx_ore.json: default/onyx_ore
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_hammer.json: default/emerald_hammer
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_ore.json: default/ruby_ore
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/arrow_next_icon.json: required/arrow_next_icon
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/diamond_cog.json: default/diamond_cog
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_sword.json: default/obsidian_sword
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_leggings.json: default/armors/ruby_leggings
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_leggings.json: default/armors/ruby_leggings
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/orax.json: default/orax
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/exit_icon.json: required/exit_icon
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/iron_cog.json: default/iron_cog
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_boots.json: default/armors/obsidian_boots
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_boots.json: default/armors/obsidian_boots
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_leggings.json: default/armors/emerald_leggings
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_leggings.json: default/armors/emerald_leggings
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_leggings.json: default/armors/obsidian_leggings
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/obsidian_leggings.json: default/armors/obsidian_leggings
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_helmet.json: default/armors/ruby_helmet
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/ruby_helmet.json: default/armors/ruby_helmet
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/arrow_previous_icon.json: required/arrow_previous_icon
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/fire_hammer.json: default/fire_hammer
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/orax_hammer.json: default/orax_hammer
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/weed_seed.json: default/weed/seed
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_chestplate.json: default/armors/emerald_chestplate
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/emerald_chestplate.json: default/armors/emerald_chestplate
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Found invalid texture-path inside model-file assets/minecraft/models/weed_leaf.json: default/weed/leaf
+[19:52:43] [Server thread/INFO]: Oraxen | Verify that you have a texture in said path.
+
+[19:52:43] [Server thread/INFO]: Oraxen | Pack contains malformed texture(s) and/or model(s)
+[19:52:43] [Server thread/INFO]: Oraxen | These need to be fixed, otherwise the resourcepack will be broken
+
+[19:52:43] [Server thread/INFO]: Oraxen | Generating atlas-file for 1.19.3+ Resource Pack format
+[19:52:43] [Server thread/INFO]: Oraxen | Attempting to exclude malformed textures from atlas-file
+[19:52:43] [Server thread/INFO]: 
+[19:52:43] [Server thread/INFO]: Oraxen | No duplicate font files found!
+[19:52:43] [Server thread/INFO]: 
+[19:52:43] [Server thread/INFO]: Oraxen | c
+[19:52:43] [Server thread/INFO]: Oraxen | c
+[19:52:43] [Server thread/INFO]: Oraxen | Successfully loaded on Ubuntu 20.04.6 LTS (focal)
+[19:52:43] [Server thread/INFO]: Oraxen | Plugin "MythicMobs" detected, enabling hooks
+[19:52:43] [Server thread/INFO]: Oraxen | This is a compiled version of Oraxen.
+[19:52:43] [Server thread/INFO]: Oraxen | Compiled versions come without Default assets and support is not provided.
+[19:52:43] [Server thread/INFO]: Oraxen | Consider purchasing Oraxen on SpigotMC or Polymart for access to the full version.
+[19:52:43] [Server thread/INFO]: [GeyserModelEngine] Enabling GeyserModelEngine v1.0-SNAPSHOT
+[19:52:43] [Server thread/INFO]: [GeyserUtils] Enabling GeyserUtils v1.0-SNAPSHOT*
+[19:52:43] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.5.0-SNAPSHOT
+[19:52:43] [Server thread/INFO]: [BetterRevive] Enabling BetterRevive v0.9.1-BETA
+[19:52:43] [Server thread/INFO]: [BetterRevive] Inventory title with support for more than 32 characters. Skipping..
+[19:52:43] [Server thread/INFO]: [BetterRevive] Hex colors are available! Ready for RGB..
+[19:52:43] [Server thread/INFO]: [BetterRevive] Old constructor for HoverEvent found! Using it..
+[19:52:43] [Server thread/INFO]: [BetterRevive] New sendTitle method found! Using it..
+[19:52:43] [Server thread/INFO]: [BetterRevive] New setUnbreakable method found! Using it..
+[19:52:43] [Server thread/INFO]: [BetterRevive] New isUnbreakable method found! Using it..
+[19:52:43] [Server thread/INFO]:   ___      _   _           ___         _         
+[19:52:43] [Server thread/INFO]:  | _ ) ___| |_| |_ ___ _ _| _ \_____ _(_)_ _____ 
+[19:52:43] [Server thread/INFO]:  | _ \/ -_)  _|  _/ -_) '_|   / -_) V / \ V / -_)
+[19:52:43] [Server thread/INFO]:  |___/\___|\__|\__\___|_| |_|_\___|\_/|_|\_/\___|
+[19:52:43] [Server thread/INFO]: 
+[19:52:43] [Server thread/INFO]:    Running plugin BetterRevive v0.9.1-BETA (v2_0)
+[19:52:43] [Server thread/INFO]:    Server running Paper version git-Paper-497 (MC: 1.20.4)
+[19:52:43] [Server thread/INFO]:    (Implementing API version git-Paper-497 (MC: 1.20.4))
+[19:52:43] [Server thread/INFO]:    (Developed by  AlonsoAliaga - Thanks for using my plugin ❤)
+[19:52:43] [Server thread/INFO]:    If you loved the plugin consider leaving a review and mentioning your server IP in it!
+[19:52:43] [Server thread/INFO]: 
+[19:52:43] [Server thread/INFO]: ==============================================================================================
+[19:52:43] [Server thread/INFO]: [BetterRevive] This is not a error! This is just a warning to keep in mind if you have issues!
+[19:52:43] [Server thread/INFO]: [BetterRevive] You are using a Paper fork (Paper). This plugin was made for Spigot
+[19:52:43] [Server thread/INFO]: [BetterRevive] but was (in most cases) tested with different builds of Paper and Purpur.
+[19:52:43] [Server thread/INFO]: [BetterRevive] Spigot and forks API are really similar and should be compatible, however there are
+[19:52:43] [Server thread/INFO]: [BetterRevive] some cases in which they aren't compatible. If you have issues report them to the
+[19:52:43] [Server thread/INFO]: [BetterRevive] developer instead of reviewing 1 star. Thanks in advanced!
+[19:52:43] [Server thread/INFO]: [BetterRevive] Join us in our official support server on alonsoaliaga.com/discord
+[19:52:43] [Server thread/INFO]: ==============================================================================================
+[19:52:43] [Server thread/INFO]: 
+[19:52:43] [Server thread/INFO]: [BetterRevive] BungeeCord action bar available. Hooking..
+[19:52:43] [Server thread/INFO]: [BetterRevive] ProtocolLib found! Checking..
+[19:52:43] [Server thread/INFO]: [Auto-update] Configuration config.yml is up-to-date!
+[19:52:43] [Server thread/INFO]: [BetterRevive] Factions hook is enabled but couldn't find any supported faction plugin were found. Disabling hook..
+[19:52:43] [Server thread/INFO]: [BetterRevive] Finish off feature has been enabled! Players can finish off other player!
+[19:52:43] [Server thread/INFO]: [BetterRevive] Finish off health: 20 | Finish off damage multiplier: 0.5
+[19:52:43] [Server thread/INFO]: [BetterRevive] DamageCause for finish off is empty! All damage cause will be allowed to finish off players. (Includes DROWING, FIRE, LAVA, etc)
+[19:52:43] [Server thread/INFO]: [BetterRevive] Bleeding mode is 0! Plugin will select the best option for your server!
+[19:52:43] [Server thread/INFO]: [BetterRevive] Server version is v2_0. Players will look like swimming while bleeding! (Mode 2)
+[19:52:43] [Server thread/INFO]: [BetterRevive] Loaded 1 bleeding effects.
+[19:52:43] [Server thread/INFO]: [BetterRevive] Loaded 1 revived effect.
+[19:52:43] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[19:52:43] [Server thread/INFO]: [Geyser-Spigot] 
+[19:52:43] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.5.0-b715 (git-master-abf6860)
+[19:52:43] [Server thread/INFO]: [Geyser-Spigot] 
+[19:52:43] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[19:52:47] [Server thread/INFO]: [Geyser-Spigot] Registered 90 custom items
+[19:52:48] [epollEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 2350
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:orangutan in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:nwolf in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:boarbarian in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:oso in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:brute in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:pinguino in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:mono in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:qmob_creaking in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:capybara in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:duck in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:rinoceronte in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:canguro in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:elefante in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined entity: modelengine:qmob_creakingheart in registry.
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] [geyserutils] Defined 14 entities
+[19:52:48] [Server thread/INFO]: [Geyser-Spigot] Done (4.595s)! Run /geyser help for help!
+[19:52:48] [Server thread/INFO]: Running delayed init tasks
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] [Importing models]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Boarbarian.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 0 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Brute.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Canguro.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Cocod.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Elefante.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube earright in bone earright is rotated in multiple axis. Choosing one axis.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube earright in bone earright has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ -15.0 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube earleft in bone earleft is rotated in multiple axis. Choosing one axis.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube earleft in bone earleft has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ 15.0 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube tusk in bone tusk is rotated in multiple axis. Choosing one axis.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube tusk in bone tusk has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ 7.5 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube tusk in bone tusk is rotated in multiple axis. Choosing one axis.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube tusk in bone tusk has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ -7.5 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Nwolf.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Oso.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing Pinguino.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube right_arm in bone right_arm is rotated in multiple axis. Choosing one axis.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube right_arm in bone right_arm has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ -90.0 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube left_arm in bone left_arm is rotated in multiple axis. Choosing one axis.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube left_arm in bone left_arm has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ -90.0 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing bison.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube head in bone head has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ 5.0 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube head in bone head has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ -10.0 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: The cube head in bone head has illegal rotations. Cube rotation can only be -45, -22.5, 0, 22.5 and 45. [ 7.5 ]
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing capybara.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing duck.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing mono.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing orangutan.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing qmob_creaking.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing qmob_creakingheart.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Importing rino.bbmodel.
+[19:52:48] [Craft Scheduler Thread - 2 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[19:52:49] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] 
+[19:52:49] [Craft Scheduler Thread - 2 - ModelEngine/INFO]: [ModelEngine] [A] Resource pack zipped.
+[19:52:54] [Worker-Main-1/ERROR]: Couldn't load tag ddo:ray_permeable as it is missing following references: minecraft:grass (from file/deep-dark-enhanced-v1-2)
+[19:52:55] [Server thread/INFO]: Loaded 1198 recipes
+[19:52:55] [Server thread/INFO]: Loaded 1520 advancements
+[19:52:55] [ForkJoinPool.commonPool-worker-1/WARN]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:block] are present in data pack: ddo:ray_permeable
+[19:52:55] [Server thread/ERROR]: [CommandAPI] Failed to load datapacks, can't proceed with normal server load procedure. Try fixing your datapacks?
+java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.RecipeChoice.clone()" because "this.template" is null
+	at org.bukkit.inventory.SmithingTransformRecipe.getTemplate(SmithingTransformRecipe.java:50)
+	at org.bukkit.craftbukkit.v1_20_R3.inventory.CraftSmithingTransformRecipe.addToCraftingManager(CraftSmithingTransformRecipe.java:33)
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.addRecipe(CraftServer.java:1575)
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.addRecipe(CraftServer.java:1541)
+	at org.bukkit.Bukkit.addRecipe(Bukkit.java:1112)
+	at dev.jorel.commandapi.CommandAPIBukkit.registerBukkitRecipesSafely(CommandAPIBukkit.java:730)
+	at dev.jorel.commandapi.nms.NMS_1_20_R3.reloadDataPacks(NMS_1_20_R3.java:890)
+	at dev.jorel.commandapi.CommandAPIBukkit.lambda$onEnable$0(CommandAPIBukkit.java:196)
+	at org.bukkit.craftbukkit.v1_20_R3.scheduler.CraftTask.run(CraftTask.java:101)
+	at org.bukkit.craftbukkit.v1_20_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1142)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[19:52:56] [Server thread/INFO]: Done (35.520s)! For help, type "help"
+[19:52:56] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7486ms or 149 ticks behind
+[19:52:56] [Server thread/INFO]: Timings Reset
+[19:52:56] [Craft Scheduler Thread - 1 - Oraxen/INFO]: Oraxen | Automatic upload of the resource pack is enabled, uploading...
+[19:52:56] [Craft Scheduler Thread - 2 - BetterRevive/INFO]: [BetterRevive] Checking for updates...
+[19:52:56] [Craft Scheduler Thread - 2 - BetterRevive/INFO]: [BetterRevive] Plugin up-to-date! You have the latest version!
+[19:52:57] [Craft Scheduler Thread - 1 - Oraxen/INFO]: Oraxen | Resourcepack uploaded to http://atlas.oraxen.com:8080/pack.zip?id=c8024fd12a73cb1b28d25996f2e3f0ce10b5db08 in 1430 ms
+[19:57:32] [User Authenticator #0/INFO]: UUID of player YonderSky is 13bc203d-9018-3bc0-a687-0ba5fbfc47be
+[19:57:33] [Server thread/INFO]: YonderSky joined the game
+[19:57:33] [Server thread/INFO]: YonderSky[/127.224.8.80:42785] logged in with entity id 591 at ([world]-7.797320461190513, 87.0, 4.079108635825928)
+[19:57:47] [Server thread/INFO]: [BetterRevive] Absorption amount using reflections is not available!
+[19:57:47] [Server thread/INFO]: %vault_prefix% YonderSky is bleeding..
+[19:57:57] [Server thread/INFO]: YonderSky issued server command: /giveup
+[19:57:57] [Server thread/INFO]: YonderSky died because of Zombie
+[19:58:05] [Server thread/INFO]: YonderSky issued server command: /gamemode creative
+[19:58:05] [Server thread/INFO]: [YonderSky: Set own game mode to Creative Mode]
+[19:58:18] [Server thread/INFO]: YonderSky issued server command: /tp 0 130 0
+[19:58:18] [Server thread/INFO]: [YonderSky: Teleported YonderSky to 0.500000, 130.000000, 0.500000]
+[19:58:24] [Server thread/INFO]: YonderSky issued server command: /time set day
+[19:58:24] [Server thread/INFO]: [YonderSky: Set the time to 1000]
+[19:59:25] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Cocodrilo
+[19:59:39] [Server thread/INFO]: YonderSky issued server command: /gamemode sufvival
+[19:59:59] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Cocodrilo
+[20:00:08] [Server thread/INFO]: YonderSky issued server command: /gamemode survival
+[20:00:08] [Server thread/INFO]: [YonderSky: Set own game mode to Survival Mode]
+[20:00:34] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Orangutan
+[20:00:48] [Server thread/INFO]: YonderSky issued server command: /mm reload
+[20:00:48] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[20:00:48] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[20:00:48] [Server thread/INFO]: [MythicMobs] Loading Items...
+[20:00:48] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[20:00:48] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[20:00:48] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[20:00:48] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[20:00:48] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[20:00:48] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Mechanic metaskill
+[20:00:48] [Server thread/WARN]: [MythicMobs] --| Mob: PIGLIN_MECH_MOUNT | File: /workspaces/MSP-2.5/servidor_minecraft/plugins/MythicMobs/mobs/piglin_mech_mount.yml
+[20:00:48] [Server thread/WARN]: [MythicMobs] --| Error Message: Could not find MetaSkill PIGLINMECH_MOUNT_targetting_system
+[20:00:48] [Server thread/WARN]: [MythicMobs] --| Mechanic Line: skill{s=PIGLINMECH_MOUNT_targetting_system}
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 37 mobs.
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 134 skills.
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[20:00:48] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[20:00:48] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[20:01:27] [Server thread/INFO]: YonderSky issued server command: /gamemode creative
+[20:01:27] [Server thread/INFO]: [YonderSky: Set own game mode to Creative Mode]
+[20:01:37] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Elefante
+[20:02:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2615ms or 52 ticks behind
+[20:03:51] [Server thread/INFO]: YonderSky issued server command: /mm kill Elefante
+[20:08:03] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4469ms or 89 ticks behind
+[20:10:00] [Server thread/INFO]: YonderSky issued server command: /1
+[20:10:23] [Server thread/INFO]: YonderSky issued server command: /time set day
+[20:10:23] [Server thread/INFO]: [YonderSky: Set the time to 1000]
+[20:12:41] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Cocodrilo
+[20:15:32] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Canguro
+[20:16:31] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Oso
+[20:18:57] [Server thread/INFO]: YonderSky issued server command: /meg spawn Bison
+[20:19:07] [Server thread/INFO]: YonderSky issued server command: /meg spawn Oso
+[20:20:34] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/6336, uuid='f0546b0c-5c85-4cce-b6d2-de8baa4873d4', l='ServerLevel[world]', x=56.50, y=7.00, z=146.50, cpos=[3, 9], tl=446, v=true] died: Skeletal Knight suffocated in a wall
+[20:21:05] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/6385, uuid='7092e7a6-ed15-43b7-ac46-c731c63263ec', l='ServerLevel[world]', x=-28.50, y=22.00, z=95.50, cpos=[-2, 5], tl=582, v=true] died: Skeletal Knight suffocated in a wall
+[20:22:24] [Server thread/INFO]: [Mythic] Reloading plugin...
+[20:22:24] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[20:22:24] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[20:22:24] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[20:22:25] [Server thread/INFO]: [MythicMobs] Loading Items...
+[20:22:25] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[20:22:25] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[20:22:25] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[20:22:25] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[20:22:25] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[20:22:25] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Mechanic metaskill
+[20:22:25] [Server thread/WARN]: [MythicMobs] --| Mob: PIGLIN_MECH_MOUNT | File: /workspaces/MSP-2.5/servidor_minecraft/plugins/MythicMobs/mobs/piglin_mech_mount.yml
+[20:22:25] [Server thread/WARN]: [MythicMobs] --| Error Message: Could not find MetaSkill PIGLINMECH_MOUNT_targetting_system
+[20:22:25] [Server thread/WARN]: [MythicMobs] --| Mechanic Line: skill{s=PIGLINMECH_MOUNT_targetting_system}
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 37 mobs.
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 134 skills.
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[20:22:25] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[20:22:25] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[20:22:25] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[20:23:54] [Server thread/INFO]: Set the time to 1000
+[20:24:04] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Cocodrilo
+[20:24:34] [Server thread/INFO]: YonderSky issued server command: /gamemode survival
+[20:24:34] [Server thread/INFO]: [YonderSky: Set own game mode to Survival Mode]
+[20:25:39] [Server thread/INFO]: %vault_prefix% YonderSky is bleeding..
+[20:25:56] [Server thread/INFO]: %vault_prefix% YonderSky died after bleeding..
+[20:26:19] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Cocodrilo
+[20:27:30] [Server thread/INFO]: [Mythic] Reloading plugin...
+[20:27:30] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[20:27:30] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[20:27:30] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[20:27:31] [Server thread/INFO]: [MythicMobs] Loading Items...
+[20:27:31] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[20:27:31] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[20:27:31] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[20:27:31] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[20:27:31] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[20:27:31] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Mechanic metaskill
+[20:27:31] [Server thread/WARN]: [MythicMobs] --| Mob: PIGLIN_MECH_MOUNT | File: /workspaces/MSP-2.5/servidor_minecraft/plugins/MythicMobs/mobs/piglin_mech_mount.yml
+[20:27:31] [Server thread/WARN]: [MythicMobs] --| Error Message: Could not find MetaSkill PIGLINMECH_MOUNT_targetting_system
+[20:27:31] [Server thread/WARN]: [MythicMobs] --| Mechanic Line: skill{s=PIGLINMECH_MOUNT_targetting_system}
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 37 mobs.
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 134 skills.
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[20:27:31] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[20:27:31] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[20:27:31] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[20:27:39] [Server thread/INFO]: YonderSky issued server command: /mm mob s0awn Cocodrilo
+[20:27:48] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Cocodrilo
+[20:28:43] [Server thread/INFO]: Stopping the server
+[20:28:43] [Server thread/INFO]: Stopping server
+[20:28:43] [Server thread/INFO]: [BetterRevive] Disabling BetterRevive v0.9.1-BETA
+[20:28:43] [Server thread/INFO]:  
+[20:28:43] [Server thread/INFO]: [BetterRevive] Plugin has been disabled!
+[20:28:43] [Server thread/INFO]: [BetterRevive] Thank you for using my plugin!
+[20:28:43] [Server thread/INFO]:  
+[20:28:43] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.5.0-SNAPSHOT
+[20:28:43] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[20:28:43] [Server thread/INFO]: [Geyser-Spigot] Disabled extension GeyserModelEnginePackGenerator
+[20:28:43] [Server thread/INFO]: [Geyser-Spigot] Disabled extension GeyserUtils
+[20:28:43] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[20:28:43] [Server thread/INFO]: [GeyserUtils] Disabling GeyserUtils v1.0-SNAPSHOT
+[20:28:43] [Server thread/INFO]: [GeyserModelEngine] Disabling GeyserModelEngine v1.0-SNAPSHOT
+[20:28:43] [Server thread/INFO]: [Oraxen] Disabling Oraxen v1.172.0
+[20:28:43] [Server thread/INFO]: Oraxen | Unhooking plugin "MythicMobs"
+[20:28:43] [Server thread/INFO]: Oraxen | Successfully unloaded
+[20:28:43] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.3-SNAPSHOT (b112-0360721)
+[20:28:43] [Server thread/INFO]: [NBTAPI] Disabling NBTAPI v2.13.1
+[20:28:43] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR4.0.7
+[20:28:43] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.2.0-SNAPSHOT-679
+[20:28:43] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.6.2-3e052553
+[20:28:43] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[20:28:43] [Server thread/INFO]: [MythicMobs] - 
+[20:28:43] [Server thread/INFO]: [MythicMobs] - Unloading Mythic...
+[20:28:43] [Server thread/INFO]: [MythicMobs] - 
+[20:28:43] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[20:28:43] [Server thread/INFO]: [MythicMobs] - Spawners saved and unloaded...
+[20:28:43] [Server thread/INFO]: [MythicMobs] - Mobs saved and unloaded...
+[20:28:43] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[20:28:43] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[20:28:43] [Server thread/INFO]: [MythicMobs] - Variables saved...
+[20:28:43] [Server thread/INFO]: [MythicMobs] - All active settings have been saved!
+[20:28:43] [Server thread/INFO]: [MythicMobs] - Mythic has been unloaded!
+[20:28:43] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[20:28:43] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[20:28:43] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[20:28:43] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.1.1
+[20:28:43] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[20:28:43] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.13
+[20:28:43] [Server thread/INFO]: Saving players
+[20:28:43] [WebSocketConnectReadThread-88/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[20:28:43] [Server thread/INFO]: YonderSky lost connection: Server closed
+[20:28:43] [Server thread/INFO]: YonderSky left the game
+[20:28:43] [Server thread/INFO]: Saving worlds
+[20:28:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:28:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[20:28:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[20:28:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[20:28:44] [Server thread/INFO]: [ChunkHolderManager] Saved 379 block chunks, 364 entity chunks, 1 poi chunks in world 'world' in 0.48s
+[20:28:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:28:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 48 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[20:28:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:28:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[20:28:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:28:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[papuworld]'/minecraft:papuworld
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'papuworld'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'papuworld'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'papuworld'
+[20:28:45] [Server thread/INFO]: [ChunkHolderManager] Saved 9 block chunks, 115 entity chunks, 0 poi chunks in world 'papuworld' in 0.03s
+[20:28:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (papuworld): All chunks are saved
+[20:28:45] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:28:45] [Server thread/INFO]: Flushing Chunk IO
+[20:28:45] [Server thread/INFO]: Closing Thread Pool
+[20:28:45] [Server thread/INFO]: Closing Server

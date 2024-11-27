@@ -1,0 +1,122 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+PIGLIN_MECH_MOUNT: 
+  Type: IRON_GOLEM
+  Display: "Piglin Mech"
+  Health: 500
+  Damage: 2
+  AITargetSelectors:
+  - clear
+  AIGoalSelectors:
+  - clear
+  DamageModifiers:
+    - FIRE 0.0
+    - SUFFOCATION 0.0
+  Modules:
+    ThreatTable: true
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    FollowRange: 64
+    Despawn: NEVER
+  Skills:
+  - CancelEvent{sync=true} @self ~onInteract
+  - CancelEvent{sync=true} @self ~onAttack
+  - model{mid=piglin_mech_mount;d=false;usm=true;drive=true;ride=true;step=1;lp=true;syncbody=false} @self ~onSpawn
+  - model{mid=piglin_mech_mount;d=false;usm=true;drive=true;ride=true;step=1;lp=true;syncbody=false} @self ~onLoad
+  - throw{v=3;vy=-1} @eir{r=24;conditions=[ - boundingboxesoverlap]} ~onTimer:1
+  - e:p{p=large_smoke;a=4;d=true;dir=0,1,0;s=0.1;hs=1;vs=1} @modelpart{pid=left_arm_bicep} ~onTimer:1 ?varequals{var=caster.damaged;val=true}
+  - skill{s=PIGLINMECH_MOUNT_enter_driver} @trigger ~onInteract
+  - skill{s=PIGLINMECH_MOUNT_spawn} @self ~onSpawn
+  - skill{s=PIGLINMECH_MOUNT_launch_missile} @self ~onInteract
+  - skill{s=PIGLINMECH_MOUNT_land} @self ~onTimer:1
+  - skill{s=PIGLINMECH_MOUNT_targetting_system} @ModelDriver ~onTimer:1
+  - skill{s=PIGLINMECH_MOUNT_shoulder_laser} @ModelDriver ~onInteract
+  - skill{s=PIGLIN_MECH_MOUNT_trigger_attack} @self ~onDamaged
+  - skill{s=PIGLINMECH_MOUNT_bossbar_damage} @self ~onDamaged
+  - skill{s=PIGLINMECH_MOUNT_death} @self ~onDeath
+  - skill{s=PIGLINMECH_MOUNT_damaged} @self ~onDamaged <50%
+  - skill{s=PIGLINMECH_death} @self ~onDeath
+  
+  
+PIGLIN_MECH_MOUNT_ground_crack_fx:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - model{m=piglin_mech_ground_fx;usm=true;step=1;scale=2;d=false} @self ~onSpawn
+  - model{m=piglin_mech_ground_fx;usm=true;step=1;scale=2;d=false} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - remove{delay=40} @self ~onSpawn
+  - velocity{m=set;x=0;y=-100;z=0} @self ~onTimer:1
+  - lockmodel{l=true;delay=5} @self ~onSpawn
+  - spin{duration=1;velocity=<random.float.0to100>} @self ~onSpawn
+  - effect:particle{p=block;m=dirt;a=25;hs=.5;vs=.15} @self ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=24} ~onSpawn
+  
+PIGLIN_MECH_MOUNT_ground_dust_fx:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - model{m=piglinmech_dust_fx;usm=true;d=false} @self ~onSpawn
+  - model{m=piglinmech_dust_fx;usm=true;d=false} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - remove{delay=20} @self ~onSpawn
+  - velocity{m=set;x=0;y=-100;z=0} @self ~onTimer:1
+  - lockmodel{l=true;delay=5} @self ~onSpawn
+  - effect:particle{p=block;m=dirt;a=25;hs=.5;vs=.15} @self ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=24} ~onSpawn
+  
+PIGLIN_MECH_MOUNT_explosion_fx:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - model{m=piglinmech_explosion_fx;usm=true;scale=2;d=false} @self ~onSpawn
+  - model{m=piglinmech_explosion_fx;usm=true;scale=2;d=false} @self ~onLoad
+  - cullconfig{vc=false;bkc=false;blc=false} @self ~onSpawn
+  - cullconfig{vc=false;bkc=false;blc=false} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - remove{delay=40} @self ~onSpawn
+  - ignite{d=60} @eir{r=16} ~onSpawn
+  - damage{a=20} @eir{r=16} ~onSpawn
+  - throw{v=12;vy=3;repeat=5;repeati=1} @pir{r=16} ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=32} ~onSpawn
+  - skill{s=PIGLINMECH_recoil} @pir{r=32} ~onTimer:3
+  - velocity{m=set;x=0;y=-100;z=0} @self ~onTimer:1
+  - lockmodel{l=true;delay=5} @self ~onSpawn
+  - effect:particle{p=block;m=dirt;a=25;hs=.5;vs=.15} @self ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=24} ~onSpawn
+  
+PIGLINMECH_MOUNT_marker:
+  Type: MARKER
+  Skills:
+  - signal{s=LEAP;delay=5} @parent ~onSpawn
+  
+PIGLINMECH_MOUNT_laser_line:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+    Marker: true
+    Invisible: true
+  Skills:
+  - projectile{v=60;hs=true;oT=[ - e:p{p=lava}];sE=false;mr=16;fo=true} @forward{f=20} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+
+PIGLINMECH_MOUNT_laser_particle:
+  Type: ITEM_DISPLAY
+  Display: "PARTICLE"
+  DisplayOptions:
+    Item: PIGLINMECH_LASER_PARTICLE
+    BlockLight: 15
+    SkyLight: 15
+    Billboard: CENTER
+  Skills:
+  - displaytransformation{action=MULTIPLY;transformation=SCALE;value=0.75,0.75,0.75} @self ~onTimer:1

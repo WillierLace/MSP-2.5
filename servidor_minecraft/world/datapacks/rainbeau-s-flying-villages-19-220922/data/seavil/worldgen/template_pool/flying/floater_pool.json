@@ -1,0 +1,159 @@
+{
+  "name": "seavil:flying/floater_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_01",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_02",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_03",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_04",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_05",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_06",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_small_01",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_small_02",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_small_stone_01",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_small_stone_02",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_stone_01",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_stone_02",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_tiny_01",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_tiny_02",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_tiny_pair_01",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_tiny_stone_01",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 16,
+      "element": {
+        "location": "seavil:flying/houses/07_floater_null",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

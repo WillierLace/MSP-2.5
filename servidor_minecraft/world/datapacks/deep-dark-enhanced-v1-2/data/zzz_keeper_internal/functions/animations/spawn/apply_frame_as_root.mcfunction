@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..50 run function zzz_keeper_internal:animations/spawn/tree/branch_0_50

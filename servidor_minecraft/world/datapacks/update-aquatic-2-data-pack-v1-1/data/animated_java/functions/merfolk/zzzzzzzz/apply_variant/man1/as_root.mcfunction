@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:merfolk/zzzzzzzz/apply_variant/man1/as_bone

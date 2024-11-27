@@ -1,0 +1,3 @@
+execute if score @s aj.tentacle.animation.attack.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:tentacle/zzzzzzzz/animations/attack/end_loop
+execute if score @s aj.tentacle.animation.attack.loop_mode = $aj.loop_mode.once aj.i run function animated_java:tentacle/animations/attack/stop
+execute if score @s aj.tentacle.animation.attack.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:tentacle/animations/attack/pause

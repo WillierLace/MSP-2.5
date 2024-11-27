@@ -1,0 +1,2 @@
+function animated_java:clam/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:clam/zzzzzzzz/animations/open/pause_as_root

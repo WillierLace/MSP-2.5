@@ -1,0 +1,3 @@
+function animated_java:tentacle/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:tentacle/zzzzzzzz/animations/attack/pause_as_root
+function animated_java:tentacle/zzzzzzzz/animations/idle2/pause_as_root

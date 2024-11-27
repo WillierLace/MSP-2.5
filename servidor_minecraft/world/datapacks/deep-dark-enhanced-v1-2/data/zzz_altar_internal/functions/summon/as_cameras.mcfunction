@@ -1,0 +1,1 @@
+function #altar:on_summon_as_cameras

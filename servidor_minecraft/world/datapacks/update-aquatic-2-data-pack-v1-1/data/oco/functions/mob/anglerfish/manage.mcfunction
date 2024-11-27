@@ -1,0 +1,1 @@
+execute on passengers run function oco:mob/anglerfish/linkmodel

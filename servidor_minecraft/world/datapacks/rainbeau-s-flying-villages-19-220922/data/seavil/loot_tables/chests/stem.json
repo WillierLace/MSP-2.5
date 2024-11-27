@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+		  "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 2,
+          "name": "minecraft:chests/village/village_armorer"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/village/village_toolsmith"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/village/village_weaponsmith"
+        }
+      ]
+    }
+  ]
+}

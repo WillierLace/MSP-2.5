@@ -1,0 +1,1 @@
+function animated_java:tentacle/zzzzzzzz/animations/idle2/tick_animation

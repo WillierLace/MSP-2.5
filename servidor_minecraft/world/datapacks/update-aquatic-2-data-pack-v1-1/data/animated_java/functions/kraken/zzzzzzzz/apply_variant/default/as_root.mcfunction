@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:kraken/zzzzzzzz/apply_variant/default/as_bone

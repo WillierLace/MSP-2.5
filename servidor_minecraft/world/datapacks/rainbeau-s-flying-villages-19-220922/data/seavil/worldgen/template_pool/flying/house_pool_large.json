@@ -1,0 +1,150 @@
+{
+  "name": "seavil:flying/house_pool_large",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_aquarium",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_butcher_sav",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_butcher_tall",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_donut",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_farm_large",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_fisher",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_fletcher",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_house_medium1",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_house_medium1_sav",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_library_large",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_loop",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_shepherd",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_stable",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_temple_sav",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_triplet",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/houses/21_zoo",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }	
+  ]
+}

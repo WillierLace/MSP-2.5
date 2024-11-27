@@ -1,0 +1,1 @@
+function animated_java:splash/zzzzzzzz/animations/splash/tick_animation

@@ -1,0 +1,1 @@
+function animated_java:clam/zzzzzzzz/animations/open/tick_animation

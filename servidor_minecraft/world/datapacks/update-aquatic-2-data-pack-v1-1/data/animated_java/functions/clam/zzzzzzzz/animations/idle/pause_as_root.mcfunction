@@ -1,0 +1,1 @@
+tag @s remove aj.clam.animation.idle

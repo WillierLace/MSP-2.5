@@ -1,0 +1,9 @@
+summon item ~ ~1 ~ {Item:{id:"minecraft:diamond_sword",Count:1b,tag:{CustomModelData:13370008,Tags:["sword"],AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:9,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-123425,22812,165632,-45624]},{AttributeName:"generic.attack_speed",Amount:-2,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-123425,22912,165632,-45824]}],display:{Name:'[{"text":"Sword of the Deep","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"","italic":false}]','[{"text":"Souls of the long lost power","italic":false,"color":"gray"}]','[{"text":"this blade. Hold sneak","italic":false,"color":"gray"}]','[{"text":"to charge up, then","italic":false,"color":"gray"}]','[{"text":"right click to summon","italic":false,"color":"gray"}]','[{"text":"the Warden\'s Sonic Boom.","italic":false,"color":"gray"}]','[{"text":"","italic":false,"color":"gray"}]','[{"text":"When in Main Hand:","italic":false,"color":"gray"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"+9 Attack Damage","italic":false,"color":"green"}]','[{"text":"+1.5 Attack Speed","italic":false,"color":"green"}]']},HideFlags:2}}}
+
+
+execute at @s run execute as @e[tag=watcher,tag=!shrieked] run function ddo:mobs/watcher/shriek
+execute at @s positioned ~ ~1 ~ run particle minecraft:flash ~ ~ ~ 1 1 1 0.1 100
+execute at @s run playsound block.sculk_shrieker.shriek block @a ~ ~ ~ 4 1
+
+execute at @s run execute as @e[type=item,nbt={Item:{id:"minecraft:echo_shard",Count:16b}},distance=..1.5] run kill @s
+execute at @s run execute as @e[type=item,nbt={Item:{id:"minecraft:pink_dye",Count:1b,tag:{Tags:[antler]}}},distance=..1.5] run kill @s

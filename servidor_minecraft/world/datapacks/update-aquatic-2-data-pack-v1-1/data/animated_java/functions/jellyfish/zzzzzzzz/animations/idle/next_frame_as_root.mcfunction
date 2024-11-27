@@ -1,0 +1,1 @@
+function animated_java:jellyfish/zzzzzzzz/animations/idle/tick_animation

@@ -1,0 +1,1 @@
+execute as @e[tag=aj.devourer.root,tag=!aj.devourer.animation.idle,tag=!aj.devourer.animation.attack] run function devourer:animations/idle/play

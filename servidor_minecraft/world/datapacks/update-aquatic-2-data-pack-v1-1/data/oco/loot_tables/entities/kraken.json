@@ -1,0 +1,137 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Eldritch Core",
+                    "color": "#99cc33",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_lore",
+            "lore": [
+              {
+                "text": " "
+              },
+              {
+                "text": "The Core reverberates with Abyssal",
+                "color": "dark_gray",
+                "bold": false,
+                "italic": true,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "energy...",
+                "color": "dark_gray",
+                "bold": false,
+                "italic": true,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "When in Offhand:",
+                "color": "dark_purple",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "Grants bonus damage, resistance,",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "and fire resistance, but drains",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "your hunger.",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "Trade it with the Merfolk",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "for the Helm of the Sea.",
+                "color": "aqua",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{CustomModelData:13370014,Tags:[oco.core]}"
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.attack_damage",
+                "name": "",
+                "amount": 2,
+                "operation": "addition",
+                "slot": "offhand"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
+  

@@ -1,0 +1,1 @@
+{"head_rotation":true,"material":"entity_alphatest_change_color_one_sided","blend_transition":true,"per_texture_uv_size":{"kangaroo":[80,80]},"binding_bones":{"kangaroo":["body","pouch","tail","tail2","h_head","leftEar","rightEar","leftArm","glove_left","rightArm","glove_right","leftLeg","leftShin","leftFoot","rightLeg","rightShin","rightFoot"]},"anim_textures":{}}

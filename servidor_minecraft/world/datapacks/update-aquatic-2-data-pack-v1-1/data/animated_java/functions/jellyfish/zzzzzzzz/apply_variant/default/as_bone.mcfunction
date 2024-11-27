@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.jellyfish.bone.bone2] run data modify entity @s item.tag.CustomModelData set value 2
+execute if entity @s[tag=aj.jellyfish.bone.bone] run data modify entity @s item.tag.CustomModelData set value 3

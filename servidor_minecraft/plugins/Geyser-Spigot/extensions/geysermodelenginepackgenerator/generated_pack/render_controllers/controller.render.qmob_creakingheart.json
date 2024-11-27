@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","render_controllers":{"controller.render.qmob_creakingheart_qmob_creakingheartblock":{"geometry":"Geometry.t_64_64","materials":[{"*":"Material.default"}],"textures":["Texture.qmob_creakingheartblock"],"part_visibility":[{"*":false},{"main":"math.mod(math.floor(query.property('modelengine:bone0') / 1), 2) == 1"}]}}}

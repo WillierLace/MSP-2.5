@@ -1,0 +1,991 @@
+{
+  "values": [
+    "minecraft:badlands",
+    "minecraft:bamboo_jungle",
+    "minecraft:beach",
+    "minecraft:birch_forest",
+    "minecraft:cold_ocean",
+    "minecraft:dark_forest",
+    "minecraft:deep_cold_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_ocean",
+    "minecraft:desert",
+    "minecraft:eroded_badlands",
+    "minecraft:flower_forest",
+    "minecraft:forest",
+    "minecraft:jungle",
+    "minecraft:lukewarm_ocean",
+    "minecraft:mangrove_swamp",
+    "minecraft:meadow",
+    "minecraft:mushroom_fields",
+    "minecraft:ocean",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:plains",
+    "minecraft:river",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:sparse_jungle",
+    "minecraft:stony_peaks",
+    "minecraft:sunflower_plains",
+    "minecraft:swamp",
+    "minecraft:warm_ocean",
+    "minecraft:windswept_savanna",
+    "minecraft:wooded_badlands",
+    {
+      "id": "skylands:badlands",
+      "required": false
+    },
+    {
+      "id": "skylands:birch_forest",
+      "required": false
+    },
+	{
+      "id": "skylands:crystal_forest",
+      "required": false
+    },
+	{
+      "id": "skylands:dark_forest",
+      "required": false
+    },
+    {
+      "id": "skylands:desert",
+      "required": false
+    },
+	{
+      "id": "skylands:faux_end_highlands",
+      "required": false
+    },
+	{
+      "id": "skylands:flower_forest",
+      "required": false
+    },
+	{
+      "id": "skylands:forest",
+      "required": false
+    },
+	{
+      "id": "skylands:jungle",
+      "required": false
+    },
+	{
+      "id": "skylands:mangrove_swamp",
+      "required": false
+    },
+	{
+      "id": "skylands:meadow",
+      "required": false
+    },
+	{
+      "id": "skylands:old_growth_taiga",
+      "required": false
+    },
+	{
+      "id": "skylands:plains",
+      "required": false
+    },
+	{
+      "id": "skylands:prismarine_forest",
+      "required": false
+    },
+	{
+      "id": "skylands:savanna",
+      "required": false
+    },
+	{
+      "id": "skylands:snowy_plains",
+      "required": false
+    },
+	{
+      "id": "skylands:snowy_taiga",
+      "required": false
+    },
+	{
+      "id": "skylands:sparse_jungle",
+      "required": false
+    },
+	{
+      "id": "skylands:sunflower_plains",
+      "required": false
+    },
+	{
+      "id": "skylands:swamp",
+      "required": false
+    },
+	{
+      "id": "skylands:taiga",
+      "required": false
+    },
+	{
+      "id": "skylands:windswept_forest",
+      "required": false
+    },
+	{
+      "id": "skylands:windswept_plains",
+      "required": false
+    },
+	{
+      "id": "skylands:wooded_badlands",
+	  "required": false
+	},
+    {
+      "id": "waterworld:beach/badlands",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/birch_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/dark_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/desert",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/flower_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/jungle",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/mangrove_swamp",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/mixed_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/plains",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/prismarine_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/savanna",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/sparse_jungle",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/sunflower_plains",
+      "required": false
+    },
+	{
+      "id": "waterworld:beach/swamp",
+      "required": false
+    },
+    {
+      "id": "waterworld:island/badlands",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/birch_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/crater",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/crater_rim_warm",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/dark_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/desert",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/flower_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/jungle",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/mangrove_swamp",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/meadow",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/mixed_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/plains",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/prismarine_forest",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/savanna",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/sparse_jungle",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/stony_peaks",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/sunflower_plains",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/swamp",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/wooded_badlands",
+      "required": false
+    },
+	{
+      "id": "waterworld:island/wooded_slopes",
+      "required": false
+    },
+    {
+      "id": "waterworld:ocean/lukewarm_ocean",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/lukewarm_ocean_deep",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/lukewarm_ocean_trench",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/ocean",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/ocean_deep",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/ocean_trench",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/warm_ocean",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/warm_ocean_deep",
+      "required": false
+    },
+	{
+      "id": "waterworld:ocean/warm_ocean_trench",
+	  "required": false
+	},
+    {
+      "id": "terralith:alpha_islands",
+      "required": false
+    },
+    {
+      "id": "terralith:amethyst_canyon",
+      "required": false
+    },
+    {
+      "id": "terralith:amethyst_rainforest",
+      "required": false
+    },
+    {
+      "id": "terralith:ancient_sands",
+      "required": false
+    },
+    {
+      "id": "terralith:arid_highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:ashen_savanna",
+      "required": false
+    },
+    {
+      "id": "terralith:basalt_cliffs",
+      "required": false
+    },
+    {
+      "id": "terralith:blooming_plateau",
+      "required": false
+    },
+    {
+      "id": "terralith:blooming_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:brushland",
+      "required": false
+    },
+    {
+      "id": "terralith:bryce_canyon",
+      "required": false
+    },
+    {
+      "id": "terralith:desert_canyon",
+      "required": false
+    },
+    {
+      "id": "terralith:desert_oasis",
+      "required": false
+    },
+    {
+      "id": "terralith:desert_spires",
+      "required": false
+    },
+    {
+      "id": "terralith:fractured_savanna",
+      "required": false
+    },
+    {
+      "id": "terralith:gravel_beach",
+      "required": false
+    },
+    {
+      "id": "terralith:hot_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:jungle_mountains",
+      "required": false
+    },
+    {
+      "id": "terralith:lavender_forest",
+      "required": false
+    },
+    {
+      "id": "terralith:lavender_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:lush_desert",
+      "required": false
+    },
+    {
+      "id": "terralith:mirage_isles",
+      "required": false
+    },
+    {
+      "id": "terralith:moonlight_grove",
+      "required": false
+    },
+    {
+      "id": "terralith:moonlight_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:orchid_swamp",
+      "required": false
+    },
+    {
+      "id": "terralith:painted_mountains",
+      "required": false
+    },
+    {
+      "id": "terralith:red_oasis",
+      "required": false
+    },
+    {
+      "id": "terralith:rocky_jungle",
+      "required": false
+    },
+    {
+      "id": "terralith:rocky_mountains",
+      "required": false
+    },
+    {
+      "id": "terralith:sakura_grove",
+      "required": false
+    },
+    {
+      "id": "terralith:sakura_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:sandstone_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:savanna_badlands",
+      "required": false
+    },
+    {
+      "id": "terralith:savanna_slopes",
+      "required": false
+    },
+    {
+      "id": "terralith:shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:skylands",
+      "required": false
+    },
+    {
+      "id": "terralith:skylands_autumn",
+      "required": false
+    },
+    {
+      "id": "terralith:skylands_spring",
+      "required": false
+    },
+    {
+      "id": "terralith:skylands_summer",
+      "required": false
+    },
+    {
+      "id": "terralith:stony_spires",
+      "required": false
+    },
+    {
+      "id": "terralith:temperate_highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:tropical_jungle",
+      "required": false
+    },
+    {
+      "id": "terralith:volcanic_crater",
+      "required": false
+    },
+    {
+      "id": "terralith:volcanic_peaks",
+      "required": false
+    },
+    {
+      "id": "terralith:warm_river",
+      "required": false
+    },
+    {
+      "id": "terralith:warped_mesa",
+      "required": false
+    },
+    {
+      "id": "terralith:white_mesa",
+	  "required": false
+	},
+    {
+      "id": "wythers:ancient_copper_beech_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:ancient_emerald_beech_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:ancient_golden_beech_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:ancient_mossy_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:ancient_moss_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:ancient_oak_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:andesite_crags",
+      "required": false
+    },
+    {
+      "id": "wythers:aspen_crags",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_birch_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_crags",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_flower_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_forest_edge",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_plains",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:ayers_rock",
+      "required": false
+    },
+    {
+      "id": "wythers:bamboo_jungle_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:bamboo_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:bayou",
+      "required": false
+    },
+    {
+      "id": "wythers:billabong",
+      "required": false
+    },
+    {
+      "id": "wythers:birch_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:birch_taiga",
+      "required": false
+    },
+    {
+      "id": "wythers:black_beach",
+      "required": false
+    },
+    {
+      "id": "wythers:black_river",
+      "required": false
+    },
+    {
+      "id": "wythers:cactus_desert",
+      "required": false
+    },
+    {
+      "id": "wythers:calcite_coast",
+      "required": false
+    },
+    {
+      "id": "wythers:coastal_mangroves",
+      "required": false
+    },
+    {
+      "id": "wythers:cold_plains",
+      "required": false
+    },
+    {
+      "id": "wythers:cool_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:cool_forest_edge",
+      "required": false
+    },
+    {
+      "id": "wythers:cool_plains",
+      "required": false
+    },
+    {
+      "id": "wythers:danakil_desert",
+      "required": false
+    },
+    {
+      "id": "wythers:deepslate_shore",
+      "required": false
+    },
+    {
+      "id": "wythers:deep_dark_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:deep_desert",
+      "required": false
+    },
+    {
+      "id": "wythers:deep_desert_river",
+      "required": false
+    },
+    {
+      "id": "wythers:desert_beach",
+      "required": false
+    },
+    {
+      "id": "wythers:desert_lakes",
+      "required": false
+    },
+    {
+      "id": "wythers:desert_pinnacles",
+      "required": false
+    },
+    {
+      "id": "wythers:desert_river",
+      "required": false
+    },
+    {
+      "id": "wythers:dripleaf_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:dry_savanna",
+      "required": false
+    },
+    {
+      "id": "wythers:dry_tropical_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:dry_tropical_grassland",
+      "required": false
+    },
+    {
+      "id": "wythers:eucalyptus_deanei_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:eucalyptus_jungle",
+      "required": false
+    },
+    {
+      "id": "wythers:eucalyptus_jungle_canyon",
+      "required": false
+    },
+    {
+      "id": "wythers:eucalyptus_salubris_woodland",
+      "required": false
+    },
+    {
+      "id": "wythers:eucalyptus_woodland",
+      "required": false
+    },
+    {
+      "id": "wythers:flooded_jungle",
+      "required": false
+    },
+    {
+      "id": "wythers:flooded_rainforest",
+      "required": false
+    },
+    {
+      "id": "wythers:flooded_savanna",
+      "required": false
+    },
+    {
+      "id": "wythers:flooded_temperate_rainforest",
+      "required": false
+    },
+    {
+      "id": "wythers:flowering_pantanal",
+      "required": false
+    },
+    {
+      "id": "wythers:forbidden_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:forest_edge",
+      "required": false
+    },
+    {
+      "id": "wythers:giant_sequoia_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:granite_canyon",
+      "required": false
+    },
+    {
+      "id": "wythers:gravelly_beach",
+      "required": false
+    },
+    {
+      "id": "wythers:gravelly_river",
+      "required": false
+    },
+    {
+      "id": "wythers:guelta",
+      "required": false
+    },
+    {
+      "id": "wythers:harvest_fields",
+      "required": false
+    },
+    {
+      "id": "wythers:highland_tropical_rainforest",
+      "required": false
+    },
+    {
+      "id": "wythers:humid_tropical_grassland",
+      "required": false
+    },
+    {
+      "id": "wythers:jacaranda_savanna",
+      "required": false
+    },
+    {
+      "id": "wythers:jungle_canyon",
+      "required": false
+    },
+    {
+      "id": "wythers:jungle_island",
+      "required": false
+    },
+    {
+      "id": "wythers:jungle_river",
+      "required": false
+    },
+    {
+      "id": "wythers:kwongan_heath",
+      "required": false
+    },
+    {
+      "id": "wythers:lantern_river",
+      "required": false
+    },
+    {
+      "id": "wythers:lapacho_plains",
+      "required": false
+    },
+    {
+      "id": "wythers:marsh",
+      "required": false
+    },
+    {
+      "id": "wythers:mediterranean_island",
+      "required": false
+    },
+    {
+      "id": "wythers:mediterranean_island_thermal_springs",
+      "required": false
+    },
+    {
+      "id": "wythers:mud_pools",
+      "required": false
+    },
+    {
+      "id": "wythers:mushroom_island",
+      "required": false
+    },
+    {
+      "id": "wythers:outback",
+      "required": false
+    },
+    {
+      "id": "wythers:outback_desert",
+      "required": false
+    },
+    {
+      "id": "wythers:pantanal",
+      "required": false
+    },
+    {
+      "id": "wythers:phantasmal_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:phantasmal_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:red_desert",
+      "required": false
+    },
+    {
+      "id": "wythers:red_rock_canyon",
+      "required": false
+    },
+    {
+      "id": "wythers:sakura_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:salt_lakes_pink",
+      "required": false
+    },
+    {
+      "id": "wythers:salt_lakes_turquoise",
+      "required": false
+    },
+    {
+      "id": "wythers:salt_lakes_white",
+      "required": false
+    },
+    {
+      "id": "wythers:sandy_jungle",
+      "required": false
+    },
+    {
+      "id": "wythers:savanna_badlands",
+      "required": false
+    },
+    {
+      "id": "wythers:savanna_basaltic_incursions",
+      "required": false
+    },
+    {
+      "id": "wythers:savanna_river",
+      "required": false
+    },
+    {
+      "id": "wythers:scrubland",
+      "required": false
+    },
+    {
+      "id": "wythers:scrub_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:sparse_bamboo_jungle",
+      "required": false
+    },
+    {
+      "id": "wythers:sparse_eucalyptus_jungle",
+      "required": false
+    },
+    {
+      "id": "wythers:sparse_eucalyptus_woodland",
+      "required": false
+    },
+    {
+      "id": "wythers:spring_flower_fields",
+      "required": false
+    },
+    {
+      "id": "wythers:spring_flower_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:stony_canyon",
+      "required": false
+    },
+    {
+      "id": "wythers:subtropical_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:subtropical_forest_edge",
+      "required": false
+    },
+    {
+      "id": "wythers:subtropical_grassland",
+      "required": false
+    },
+    {
+      "id": "wythers:tangled_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:temperate_island",
+      "required": false
+    },
+    {
+      "id": "wythers:temperate_rainforest",
+      "required": false
+    },
+    {
+      "id": "wythers:temperate_rainforest_crags",
+      "required": false
+    },
+    {
+      "id": "wythers:tepui",
+      "required": false
+    },
+    {
+      "id": "wythers:tibesti_mountains",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_beach",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_forest_canyon",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_forest_river",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_grassland",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_island",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_rainforest",
+      "required": false
+    },
+    {
+      "id": "wythers:tropical_volcano",
+      "required": false
+    },
+    {
+      "id": "wythers:tsingy_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:volcanic_crater",
+      "required": false
+    },
+    {
+      "id": "wythers:volcano",
+      "required": false
+    },
+    {
+      "id": "wythers:warm_birch_forest",
+      "required": false
+    },
+    {
+      "id": "wythers:warm_stony_shore",
+      "required": false
+    },
+    {
+      "id": "wythers:waterlily_swamp",
+      "required": false
+    },
+    {
+      "id": "wythers:windswept_jungle",
+      "required": false
+    },
+    {
+      "id": "wythers:wooded_desert",
+      "required": false
+    },
+    {
+      "id": "wythers:wooded_savanna",
+	  "required": false
+	}
+  ]
+}

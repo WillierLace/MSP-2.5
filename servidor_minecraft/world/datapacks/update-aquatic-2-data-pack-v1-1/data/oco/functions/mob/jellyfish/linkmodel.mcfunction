@@ -1,0 +1,2 @@
+execute as @e[tag=aj.jellyfish.root] run execute as @s at @s if score @s oco.id = @e[tag=oco.jellyfish,sort=nearest,limit=1] oco.id run execute as @s at @e[tag=oco.jellyfish,sort=nearest,limit=1] run tp @s ~ ~ ~
+execute as @e[tag=oco.jellyfishinteraction] run execute as @s at @s if score @s oco.id = @e[tag=oco.jellyfish,sort=nearest,limit=1] oco.id run execute as @s at @e[tag=oco.jellyfish,sort=nearest,limit=1] run tp @s ~ ~ ~

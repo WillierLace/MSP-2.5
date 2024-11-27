@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.watcher.bone.pupil] run data modify entity @s {} merge value {transformation:[-1.4f,1.2123384787296907e-16f,8.659560562354932e-17f,-1.3011872240940627e-16f,0f,0.9899494936611664f,-0.7071067811865476f,-0.125f,-1.7145055188062944e-16f,-0.9899494936611666f,-0.7071067811865475f,1.0625f,0f,0f,0f,1f],start_interpolation:0}

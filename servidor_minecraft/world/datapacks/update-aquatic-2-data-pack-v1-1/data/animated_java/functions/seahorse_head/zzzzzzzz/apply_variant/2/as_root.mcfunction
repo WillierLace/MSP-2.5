@@ -1,0 +1,1 @@
+function animated_java:seahorse_head/zzzzzzzz/apply_variant/2/as_bone

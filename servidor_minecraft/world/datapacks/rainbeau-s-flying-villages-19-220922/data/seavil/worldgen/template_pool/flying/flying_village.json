@@ -1,0 +1,24 @@
+{
+  "name": "seavil:flying/flying_village",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{
+      "weight": 9,
+      "element": {
+        "location": "seavil:flying/platforms/t0/21_town_center",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t0/21_town_center_illager",
+        "processors": "seavil:flying_island",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

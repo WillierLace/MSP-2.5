@@ -1,0 +1,3 @@
+function animated_java:merfolk/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:merfolk/zzzzzzzz/animations/swim/pause_as_root
+function animated_java:merfolk/zzzzzzzz/animations/attack/pause_as_root

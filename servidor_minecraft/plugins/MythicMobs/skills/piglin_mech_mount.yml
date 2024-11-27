@@ -1,0 +1,788 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+### ENTER PIGLIN MECH ###
+
+PIGLINMECH_MOUNT_enter_driver:
+  Cooldown: 2
+  TriggerConditions:
+  - fieldofview{angle=120}
+  Conditions:
+  - modelhasdriver false
+  Skills:
+  - gcd{ticks=50}
+  - defaultstate{t=idle;s=idle} @self
+  - state{s=passive_layer;p=1} @self
+  - state{s=enter_driver;p=2;lo=4} @self
+  - setspeed{s=0} @self
+  - setspeed{s=0.5;delay=60} @self
+  - setvar{var=caster.mounting;val=true;type=STRING;duration=60} @self
+  - delay 10
+  - lockmodel{l=false;delay=50} @self
+  - defaultstate{t=walk;s=walk} @self
+  - mountmodel{dmg=true;mode=[
+      - move{front=<skill.var.meg:front>;side=<skill.var.meg:side>} ?!variableEquals{var=caster.mounting;val=true}
+      - skill{s=PIGLINMECH_MOUNT_walk_backward} @self ?variableInRange{var=skill.meg:front;value=<0}
+      - skill{s=PIGLINMECH_MOUNT_walk_forward} @self ?variableInRange{var=skill.meg:front;value=>0}
+      - skill{s=PIGLINMECH_MOUNT_left_strafe} @self ?variableInRange{var=skill.meg:side;value=>0}
+      - skill{s=PIGLINMECH_MOUNT_leap} @self ?variableEquals{var=skill.meg:jump;value=1} ?variableEquals{var=skill.meg:on_ground;value=1}
+      - skill{s=PIGLINMECH_MOUNT_right_strafe} @self ?variableInRange{var=skill.meg:side;value=<0}
+      - skill{s=PIGLINMECH_MOUNT_reset_strafe} @self ?!variableInRange{var=skill.meg:front;value=0}
+      - skill{s=PIGLINMECH_MOUNT_exit_driver} @trigger ?variableInRange{var=skill.meg:sneak;value=>0}
+    ]} @trigger
+
+PIGLINMECH_MOUNT_exit_driver:
+  Cooldown: 2
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=50}
+  - lockmodel{l=true} @self
+  - state{s=exit_driver;p=2;lo=4} @self
+  - setspeed{s=0} @self
+  - setspeed{s=0.5;delay=60} @self
+  - setvar{var=caster.mounting;val=true;type=STRING;duration=60} @self
+  - delay 50
+  - defaultstate{t=walk;s=idle_empty} @self
+  - defaultstate{t=idle;s=idle_empty} @self
+  - state{s=passive_layer;p=1;r=true} @self
+  - throw{v=6;vy=2;delay=2} @trigger
+  - dismountmodel @trigger
+  - look{l=true;immediately=true;headonly=false;repeat=20;repeati=1} @trigger
+
+## FORWARD BACKWARD ##
+
+
+PIGLINMECH_MOUNT_walk_forward:
+  Conditions:
+  - varequals{var=caster.forward;val=true} false
+  Skills:
+  #- message{m="FORWARDS"} @everyone
+  - setvar{var=caster.forward;val=true;type=STRING} @self
+  - setspeed{t=walking;s=0.5} @self
+  - defaultstate{mid=piglin_mech_mount;type=walk;state=walk} @self 
+  
+  
+PIGLINMECH_MOUNT_walk_backward:
+  Conditions:
+  - varequals{var=caster.forward;val=false} false
+  Skills:
+  - setvar{var=caster.forward;val=false;type=STRING} @self
+  #- message{m="BACKWARDS"} @everyone
+  - setspeed{t=walking;s=0.25} @self
+  - defaultstate{mid=piglin_mech_mount;type=walk;state=walk_backwards} @self 
+
+
+### STRAFE ###
+
+
+
+## LEFT STRAFE ##
+
+
+
+PIGLINMECH_MOUNT_left_strafe:
+  Conditions:
+  - variableInRange{var=skill.meg:front;value=0} orElseCast PIGLINMECH_MOUNT_left_strafe_forward
+  - varequals{var=caster.strafe;val=left} false
+  Skills:
+  #- message{m="LEFT STRAFE"} @everyone
+  - setvar{var=caster.strafe;val=left;type=STRING} @self
+  - state{s=left_strafe;p=5;li=10;lo=10} @self 
+
+PIGLINMECH_MOUNT_left_strafe_forward:
+  Conditions:
+  - variableInRange{var=skill.meg:front;value=>0} orElseCast PIGLINMECH_MOUNT_left_strafe_back
+  - varequals{var=caster.strafe;val=left_front} false
+  Skills:
+  #- message{m="LEFT STRAFE FORWARD"} @everyone
+  - setvar{var=caster.strafe;val=left_front;type=STRING} @self
+  - state{s=left_strafe_half;p=5;li=10;lo=10} @self 
+
+PIGLINMECH_MOUNT_left_strafe_back:
+  Conditions:
+  - varequals{var=caster.strafe;val=left_back} false
+  Skills:
+  #- message{m="LEFT STRAFE BACKWARD"} @everyone
+  - setvar{var=caster.strafe;val=left_back;type=STRING} @self
+  - state{s=right_strafe_half;p=5;li=10;lo=10} @self 
+
+## RIGHT STRAFE ##
+
+
+
+PIGLINMECH_MOUNT_right_strafe:
+  Conditions:
+  - variableInRange{var=skill.meg:front;value=0} orElseCast PIGLINMECH_MOUNT_right_strafe_forward
+  - varequals{var=caster.strafe;val=right} false
+  Skills:
+  #- message{m="RIGHT STRAFE"} @everyone
+  - setvar{var=caster.strafe;val=right;type=STRING} @self
+  - state{s=right_strafe;p=5;li=10;lo=10} @self 
+
+PIGLINMECH_MOUNT_right_strafe_forward:
+  Conditions:
+  - variableInRange{var=skill.meg:front;value=>0} orElseCast PIGLINMECH_MOUNT_right_strafe_back
+  - varequals{var=caster.strafe;val=right_front} false
+  Skills:
+  #- message{m="RIGHT STRAFE FORWARD"} @everyone
+  - setvar{var=caster.strafe;val=right_front;type=STRING} @self
+  - state{s=right_strafe_half;p=5;li=10;lo=10} @self 
+
+PIGLINMECH_MOUNT_right_strafe_back:
+  Conditions:
+  - varequals{var=caster.strafe;val=right_back} false
+  Skills:
+  #- message{m="RIGHT STRAFE BACKWARD"} @everyone
+  - setvar{var=caster.strafe;val=right_back;type=STRING} @self
+  - state{s=left_strafe_half;p=5;li=10;lo=10} @self 
+  
+  
+  ## RESET ##
+
+
+PIGLINMECH_MOUNT_reset_strafe:
+  Conditions:
+  - varequals{var=caster.strafe;val=reset} false
+  - variableInRange{var=skill.meg:side;value=0}
+  Skills:
+  #- message{m="RESET STRAFE"} @everyone
+  - setvar{var=caster.strafe;val=reset;type=STRING} @self
+  - state{s=right_strafe;p=5;r=true} @self 
+  - state{s=right_strafe_half;p=5;r=true} @self 
+  - state{s=left_strafe;p=5;r=true} @self 
+  - state{s=left_strafe_half;p=5;r=true} @self 
+
+
+
+
+### RECOIL ###
+
+PIGLINMECH_MOUNT_recoil_step:
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.step;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - recoil{r=10;pitch=-.4} @eir{r=32}
+  - delay 1
+  - recoil{r=10;pitch=.3} @eir{r=32}
+  - delay 1
+  - recoil{r=10;pitch=-.2} @eir{r=32}
+  - delay 1
+  - recoil{r=10;pitch=.1} @eir{r=32}
+  
+PIGLINMECH_MOUNT_recoil:
+  Skills:
+  - recoil{r=10;pitch=-.4}
+  - delay 1
+  - recoil{r=10;pitch=.3}
+  - delay 1
+  - recoil{r=10;pitch=-.2}
+  - delay 1
+  - recoil{r=10;pitch=.1}
+
+PIGLINMECH_MOUNT_recoil_big_PIR:
+  Skills:
+  - recoil{r=20;pitch=-.8} @pir{r=32}
+  - delay 1
+  - recoil{r=20;pitch=.6} @pir{r=32}
+  - delay 1
+  - recoil{r=20;pitch=-.4} @pir{r=32}
+  - delay 1
+  - recoil{r=20;pitch=.2} @pir{r=32}
+
+PIGLINMECH_MOUNT_recoil_big:
+  Skills:
+  - recoil{r=20;pitch=-.8}
+  - delay 1
+  - recoil{r=20;pitch=.6}
+  - delay 1
+  - recoil{r=20;pitch=-.4}
+  - delay 1
+  - recoil{r=20;pitch=.2}
+
+
+### SPAWN ###
+
+
+
+PIGLINMECH_MOUNT_spawn:
+  Skills:
+  - setspeed{s=0.5} @self
+  - lockmodel{l=true} @self
+  - defaultstate{t=idle;s=idle_empty} @self
+  - defaultstate{t=walk;s=idle_empty} @self
+  - bodyrotation{rde=0;rdu=200} @self
+  - partvis{mid=piglin_mech_mount;pid=fire;v=false} @self
+  - brightness{b=15;s=15;pid=fire} @self
+
+## BOSSBAR ##
+
+PIGLINMECH_MOUNT_bossbar_set:
+  Skills:
+  - barCreate{
+    name="PIGLINMECH";
+    display="<caster.name>";
+    value=1.0;color=PURPLE;
+    style=SEGMENTED_6
+    } @self
+
+PIGLINMECH_MOUNT_bossbar_damage:
+  TriggerConditions:
+  - drivingmodel false
+  Conditions:
+  - damagecause{c=FIRE_TICK} false
+  Skills:
+  - brightness{b=15;s=15} @self
+  - barSet{name="PIGLINMECH";display="<caster.name>";value=<caster.hp>/<caster.mhp>;color=WHITE;style=SOLID} @self
+  - delay 2
+  - brightness{b=-1;s=-1} @self
+  - brightness{b=15;s=15;pid=fire} @self
+  - barSet{name="PIGLINMECH";display="<caster.name>";value=<caster.hp>/<caster.mhp>;color=PURPLE;style=SOLID} @self
+  - delay 2
+  - barSet{name="PIGLINMECH";display="<caster.name>";value=<caster.hp>/<caster.mhp>;color=WHITE;style=SOLID} @self
+  - delay 2
+  - barSet{name="PIGLINMECH";display="<caster.name>";value=<caster.hp>/<caster.mhp>;color=PURPLE;style=SOLID} @self
+
+
+## ATTACKS ##
+
+PIGLIN_MECH_MOUNT_trigger_attack:
+  TriggerConditions:
+  - drivingmodel true
+  Skills:
+  - randomskill{skills=PIGLINMECH_MOUNT_swing_1,
+                       PIGLINMECH_MOUNT_swing_2,
+                       PIGLINMECH_MOUNT_slam_front,
+                       PIGLINMECH_MOUNT_slam_front,
+                       PIGLINMECH_MOUNT_slam_front_2} @self
+
+
+
+### SWING 1 ###
+
+PIGLINMECH_MOUNT_swing_1:
+  Cooldown: 10
+  Conditions:
+  - offgcd true
+  Skills:
+  - setSkillCooldown{skill=PIGLINMECH_MOUNT_swing_2;seconds=10} @self
+  - gcd{ticks=60}
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - e:p{p=large_smoke;a=2;hs=.15;vs=.15;d=true;dir=0,1,0;s=0.1;repeat=60;repeati=1} @modelpart{pid=engine}
+  - state{s=swing_1;li=4;lo=4} @self
+  - sound{s=littleroom_piglinmech:mech.swing;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=35} @self
+  - totem{md=2;oH=PIGLINMECH_MOUNT_swing_1_damage;drawhitbox=false;hr=3;vr=3;repeat=8;repeati=1;delay=35;hnp=true} @modelpart{pid=left_arm_hand}
+  
+PIGLINMECH_MOUNT_swing_1_damage:
+  TargetConditions:
+  - drivingmodel false
+  - ridingmodel false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.hit;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - basedamage{m=1}
+  - skill{s=PIGLINMECH_MOUNT_recoil_big}
+  - throw{v=15;vy=2}
+  
+  
+### SWING 2 ###
+
+PIGLINMECH_MOUNT_swing_2:
+  Cooldown: 10
+  Conditions:
+  - offgcd true
+  Skills:
+  - setSkillCooldown{skill=PIGLINMECH_MOUNT_swing_1;seconds=10} @self
+  - gcd{ticks=60}
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - e:p{p=large_smoke;a=2;hs=.15;vs=.15;d=true;dir=0,1,0;s=0.1;repeat=60;repeati=1} @modelpart{pid=engine}
+  - state{s=swing_2;li=4;lo=4} @self
+  - sound{s=littleroom_piglinmech:mech.swing;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=35} @self
+  - totem{md=2;oH=PIGLINMECH_MOUNT_swing_2_damage;drawhitbox=false;hr=3;vr=3;repeat=8;repeati=1;delay=35;hnp=true} @modelpart{pid=right_arm_hand}
+  
+PIGLINMECH_MOUNT_swing_2_damage:
+  TargetConditions:
+  - drivingmodel false
+  - ridingmodel false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.hit;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - basedamage{m=1}
+  - skill{s=PIGLINMECH_MOUNT_recoil_big}
+  - throw{v=15;vy=2}
+
+
+  
+### SLAM FRONT ###
+
+PIGLINMECH_MOUNT_slam_front:
+  Cooldown: 15
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=60}
+  - e:p{p=large_smoke;a=2;hs=.15;vs=.15;d=true;dir=0,1,0;s=0.1;repeat=60;repeati=1} @modelpart{pid=engine}
+  - state{s=slam_front;li=4;lo=4} @self
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - sound{s=littleroom_piglinmech:mech.swing;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=35} @self
+  - totem{md=2;oS=[ - summon{t=PIGLIN_MECH_ground_crack_fx}];oH=PIGLINMECH_MOUNT_slam_front_damage;drawhitbox=false;hr=3;vr=3;delay=40;hnp=true} @modelpart{pid=left_arm_hand}
+  - totem{md=2;oH=PIGLINMECH_MOUNT_slam_front_shockwave;drawhitbox=false;hr=8;vr=8;delay=40;hnp=true} @modelpart{pid=left_arm_hand}
+  
+  
+PIGLINMECH_MOUNT_slam_front_shockwave:
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.slam;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - sudoskill{s=[ - jump{v=1}];cat=true}
+  
+  
+PIGLINMECH_MOUNT_slam_front_damage:
+  TargetConditions:
+  - drivingmodel false
+  - ridingmodel false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.hit;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - basedamage{m=1}
+  - skill{s=PIGLINMECH_MOUNT_recoil_big}
+  - throw{v=15;vy=2}
+  
+### SLAM FRONT 2 ###
+
+PIGLINMECH_MOUNT_slam_front_2:
+  Cooldown: 15
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=60}
+  - e:p{p=large_smoke;a=2;hs=.15;vs=.15;d=true;dir=0,1,0;s=0.1;repeat=60;repeati=1} @modelpart{pid=engine}
+  - state{s=slam_front_2;li=4;lo=4} @self
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - sound{s=littleroom_piglinmech:mech.swing;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=35} @self
+  - totem{md=2;oS=[ - summon{t=PIGLIN_MECH_ground_crack_fx}];oH=PIGLINMECH_MOUNT_slam_front_2_damage;drawhitbox=false;hr=3;vr=3;delay=40;hnp=true} @modelpart{pid=right_arm_hand}
+  - totem{md=2;oH=PIGLINMECH_MOUNT_slam_front_2_shockwave;drawhitbox=false;hr=8;vr=8;delay=40;hnp=true} @modelpart{pid=right_arm_hand}
+  
+  
+PIGLINMECH_MOUNT_slam_front_2_shockwave:
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.slam;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - sudoskill{s=[ - jump{v=1}];cat=true}
+  
+PIGLINMECH_MOUNT_slam_front_2_damage:
+  TargetConditions:
+  - drivingmodel false
+  - ridingmodel false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.hit;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - basedamage{m=1}
+  - skill{s=PIGLINMECH_MOUNT_recoil_big}
+  - throw{v=15;vy=2}
+  
+## QUICK SPIN ##
+
+PIGLINMECH_MOUNT_quick_spin:
+  Cooldown: 20
+  Conditions:
+  - offgcd true
+  Skills:
+  - gcd{ticks=60}
+  - e:p{p=large_smoke;a=2;hs=.15;vs=.15;d=true;dir=0,1,0;s=0.1;repeat=60;repeati=1} @modelpart{pid=engine}
+  - state{s=spin_attack_short;li=2;lo=10} @self
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - sound{s=littleroom_piglinmech:mech.swing;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=25} @self
+  - sound{s=littleroom_piglinmech:mech.swing;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=35} @self
+  - sound{s=littleroom_piglinmech:mech.swing;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=45} @self
+  - totem{md=2;oH=PIGLINMECH_MOUNT_quick_spin_damage;drawhitbox=false;hr=3;vr=3;repeat=20;repeati=1;delay=23;hnp=true} @modelpart{pid=left_arm_hand}
+  - totem{md=2;oH=PIGLINMECH_MOUNT_quick_spin_damage;drawhitbox=false;hr=3;vr=3;repeat=20;repeati=1;delay=23;hnp=true} @modelpart{pid=right_arm_hand}
+  
+PIGLINMECH_MOUNT_quick_spin_damage:
+  TargetConditions:
+  - drivingmodel false
+  - ridingmodel false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.hit;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - basedamage{m=1}
+  - skill{s=PIGLINMECH_MOUNT_recoil_big}
+  - throw{v=15;vy=2}
+
+## LEAP ##
+
+
+PIGLINMECH_MOUNT_leap:
+  Cooldown: 5
+  Skills:
+  - gcd{ticks=80}
+  - bodyrotation{rde=0;rdu=0} @self
+  - setspeed{s=0} @self
+  #- look{l=true;headonly=false;immediately=true;repeat=45;repeati=1} @children{target=markers}
+  - state{s=leap} @self
+  #- lockmodel{l=true} @self
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - delay 42
+  - sound{s=littleroom_piglinmech:mech.leap;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - velocity{m=ADD;x=0;y=5;z=5;relative=true} @self
+  #- velocity{m=ADD;x=0;y=0;z=1;relative=true;repeat=60;repeati=1} @self
+  - skill{s=PIGLINMECH_MOUNT_leap_velocity;repeat=60;repeati=1} @self
+  #- lunge{v=3;vy=1;repeat=3;repeati=1} @forward{f=128;lockpitch=true}
+  #- lunge{v=4;vy=0;repeat=1;repeati=1;delay=4} @forward{f=128;lockpitch=true}
+  - lockmodel{l=true} @self
+  - delay 15
+  - setvar{var=caster.inair;val=true;type=STRING} @self
+  - state{s=in_air} @self
+  
+PIGLINMECH_MOUNT_leap_velocity:
+  Conditions:
+  - onground false
+  Skills:
+  - velocity{m=add;x=0;y=0;z=0.5;relative=true} @self
+  
+PIGLINMECH_MOUNT_land:
+  Conditions:
+  - ( altitude{a=<3} || onground ) true
+  - varequals{var=caster.inair;val=true} true
+  Skills:
+  - gcd{ticks=40}
+  - sound{s=littleroom_piglinmech:mech.land;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=5} @self
+  - totem{md=2;oH=PIGLINMECH_MOUNT_land_damage;drawhitbox=false;hr=3;vr=2;repeat=30;repeati=1;hnp=true} @self
+  - skill{s=PIGLINMECH_MOUNT_recoil_big} @pir{r=32}
+  #- setspeed{s=2} @self
+  - setspeed{s=0.5;delay=30} @self
+  - propel{v=0.5;repeat=10;repeati=1;delay=10} @forward{f=16;lockpitch=true}
+  - setvar{var=caster.inair;val=false;type=STRING} @self
+  - state{s=land} @self
+  - lockmodel{l=false} @self
+  - bodyrotation{rde=0;rdu=200;delay=40} @self
+  - delay 40
+  - remove @children{target=markers}
+  
+PIGLINMECH_MOUNT_land_damage:
+  TargetConditions:
+  - ridingmodel false
+  - drivingmodel false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.hit;v=1;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - throw{v=10;vy=2}
+  - basedamage{m=1}
+  
+  
+## LONG SPIN ##
+
+PIGLIN_MECH_spin_sound:
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.swing;v=2;sc=HOSTILE} @self
+
+PIGLINMECH_MOUNT_long_spin_blink:
+  Cooldown: 1
+  Conditions:
+  - varequals{var=caster.spinning;val=true}
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.alarm;v=5;sc=HOSTILE} @self
+  - tint{m=piglin_mech_mount;c=e06666} @self
+  - brightness{b=15;s=15} @self
+  - delay 10
+  - tint{m=piglin_mech_mount;c=FFFFFF} @self
+  - brightness{b=-1;s=-1} @self
+  - brightness{b=15;s=15;pid=fire} @self
+
+PIGLINMECH_MOUNT_long_spin:
+  Cooldown: 50
+  Conditions:
+  - targetwithin{d=12} true
+  - offgcd true
+  - varequals{var=caster.damaged;val=true}
+  Skills:
+  - gcd{ticks=240}
+  - setvar{var=caster.spinning;val=true;type=STRING;d=200} @self
+  - setspeed{s=0.5} @self
+  - defaultstate{t=walk;s=walk_slow} @self
+  - setspeed{s=0.5;delay=220} @self
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - defaultstate{t=walk;s=walk;delay=220} @self
+  - e:p{p=large_smoke;a=2;hs=.15;vs=.15;d=true;dir=0,1,0;s=0.1;repeat=60;repeati=1} @modelpart{pid=engine}
+  - state{s=spin_attack_long;li=2;lo=2} @self
+  - totem{md=2;oH=PIGLINMECH_MOUNT_quick_spin_damage;drawhitbox=false;hr=3;vr=3;repeat=160;repeati=1;delay=23;hnp=true} @modelpart{pid=left_arm_hand}
+  - totem{md=2;oH=PIGLINMECH_MOUNT_quick_spin_damage;drawhitbox=false;hr=3;vr=3;repeat=160;repeati=1;delay=23;hnp=true} @modelpart{pid=right_arm_hand}
+  
+
+## SHOULDER LASERS ##
+
+
+PIGLINMECH_MOUNT_shoulder_laser:
+  Cooldown: 0.5
+  TriggerConditions:
+  - holding{i=redstone} true
+  - drivingmodel true
+  Conditions:
+  - offgcd true
+  Skills:
+  #- message{m="LASER TIME!"} @everyone
+  - consumeslot{} @trigger
+  - setvar{var=caster.lasers;val=true;type=STRING;duration=60} @self
+  - randomskill{skills=PIGLINMECH_MOUNT_laser_left_shoulder,
+                       PIGLINMECH_MOUNT_laser_right_shoulder}
+               
+
+## LEFT SHOULDER LASER ##
+
+PIGLINMECH_MOUNT_laser_left_shoulder:
+  Cooldown: 1
+  Conditions:
+  - varequals{var=caster.damaged;val=true} false
+  - offgcd true
+  Skills:
+  - skill{s=PIGLINMECH_MOUNT_laser_telegraph_left_shoulder;repeat=3;repeati=1} @modelpart{pid=left_shoulder_laser}
+  - delay 10
+  - sudoskill{skill=PIGLINMECH_MOUNT_left_shoulder_laser_attack_projectile;cat=true}
+  #- skill{s=PIGLINMECH_MOUNT_left_shoulder_laser_attack_projectile} @targetlocation
+  
+PIGLINMECH_MOUNT_laser_telegraph_left_shoulder:
+  Skills:
+  - missile{bulletType=MOB;
+               mob=PIGLINMECH_MOUNT_laser_particle;
+               syo=<random.float.-2to2>;
+               sfo=<random.float.2to4>;
+               sso=<random.float.-2to2>;
+               oT=[ - setprojectiledirection @modelpart{pid=left_shoulder_laser;offset=GLOBAL;y=2}];
+               v=5;
+               fromorigin=true;
+               origin=@modelpart{pid=left_shoulder_laser};
+               hitself=true;
+               mr=2;
+               byo=2;
+               tyo=2;
+               se=false;
+               sb=false;
+               bulletViewDistance=128}
+  
+PIGLINMECH_MOUNT_left_shoulder_laser_attack_projectile:
+  Conditions:
+  - varequals{var=caster.stun;val=true} false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.laser_fire;v=5;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - projectile{v=50;
+               mr=666;
+               bullettype=DISPLAY;
+               interpolation=4;
+               material=ink_sac;
+               model=13370037;
+               hr=1;
+               vr=1;
+               sE=false;
+               oT=PIGLINMECH_MOUNT_laser_tick;
+               oS=PIGLINMECH_MOUNT_laser_start;
+               oH=PIGLINMECH_MOUNT_laser_end;
+               ohb=PIGLINMECH_MOUNT_laser_end;
+               tyo=1;
+               hnp=true;
+               bulletbrightnessblock=15;
+               bulletbrightnesssky=15;
+               sso=-5;
+               syo=-3;
+               sfo=4;
+               bulletViewDistance=128} @targetlocation
+          
+## RIGHT SHOULDER LASER ##
+
+
+PIGLINMECH_MOUNT_laser_right_shoulder:
+  Cooldown: 1
+  Conditions:
+  - offgcd true
+  Skills:
+  - skill{s=PIGLINMECH_MOUNT_laser_telegraph_right_shoulder;repeat=3;repeati=1} @modelpart{pid=right_shoulder_laser}
+  - delay 10
+  - sudoskill{skill=PIGLINMECH_MOUNT_right_shoulder_laser_attack_projectile;cat=true}
+  #- skill{s=PIGLINMECH_MOUNT_right_shoulder_laser_attack_projectile} @targetlocation
+  
+PIGLINMECH_MOUNT_laser_telegraph_right_shoulder:
+  Skills:
+  - missile{bulletType=MOB;
+               mob=PIGLINMECH_MOUNT_laser_particle;
+               syo=<random.float.-2to2>;
+               sfo=<random.float.2to4>;
+               sso=<random.float.-2to2>;
+               oT=[ - setprojectiledirection @modelpart{pid=right_shoulder_laser;offset=GLOBAL;y=2}];
+               v=5;
+               fromorigin=true;
+               origin=@modelpart{pid=right_shoulder_laser};
+               hitself=true;
+               mr=2;
+               byo=2;
+               tyo=2;
+               se=false;
+               sb=false;
+               bulletViewDistance=128}
+  
+PIGLINMECH_MOUNT_right_shoulder_laser_attack_projectile:
+  Conditions:
+  - varequals{var=caster.stun;val=true} false
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.laser_fire;v=5;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - projectile{v=50;
+               mr=666;
+               bullettype=DISPLAY;
+               interpolation=4;
+               material=ink_sac;
+               model=13370037;
+               hr=1;
+               vr=1;
+               sE=false;
+               oT=PIGLINMECH_MOUNT_laser_tick;
+               oS=PIGLINMECH_MOUNT_laser_start;
+               oH=PIGLINMECH_MOUNT_laser_end;
+               ohb=PIGLINMECH_MOUNT_laser_end;
+               tyo=1;
+               hnp=true;
+               bulletbrightnessblock=15;
+               bulletbrightnesssky=15;
+               sso=3;
+               syo=2;
+               sfo=4;
+               bulletViewDistance=128} @targetlocation
+
+
+
+               
+PIGLINMECH_MOUNT_laser_tick:
+  Skills:
+  - effect:blockmask{m=LIGHT;r=1;d=2;oa=true;na=false}
+  
+PIGLINMECH_MOUNT_laser_start:
+  Skills:
+  - effect:blockmask{m=LIGHT;r=1;d=2;oa=true;na=false}
+  - effect:particle{p=flash}
+  
+PIGLINMECH_MOUNT_laser_end:
+  Skills:
+  - summon{t=PIGLINMECH_MOUNT_laser_line;cd=1} @origin
+  - e:p{p=large_smoke;a=2;hs=.25;vs=0;d=true;dir=0,1,0;s=0.1;repeat=60;repeati=1}
+  - e:p{p=flash;a=1}
+  - e:p{p=lava;a=10}
+  - explosion{yield=0.25;bd=false;f=true}
+  - throw{v=4;vy=2}
+  - skill{s=PIGLINMECH_MOUNT_recoil} @pir{r=12}
+
+## MISSILE ##
+
+
+PIGLINMECH_MOUNT_launch_missile:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{i=redstone_block} true
+  Conditions:
+  #- varequals{var=caster.missile;val=true} false
+  - offgcd true
+  TargetConditions:
+  Skills:
+  - consumeslot{} @trigger
+  - gcd{ticks=100}
+  - setvar{var=caster.missile;val=true;type=STRING} @self
+  - setspeed{s=0} @self
+  - setspeed{s=0.5;delay=120} @self
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - state{s=fire_missile} @self
+  - propel{v=0.5;delay=80;repeat=25;repeati=1} @forward{f=-5;yo=-2}
+  - summon{t=PIGLIN_MECH_ground_dust_fx;delay=80} @self
+  - sound{s=littleroom_piglinmech:mech.rocket_launch;v=5;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=80} @self
+  - sudoskill{skill=PIGLINMECH_MOUNT_launch_missile_sudo;cat=true} @trigger
+  
+PIGLINMECH_MOUNT_launch_missile_sudo:
+  Skills:
+  - projectile{bulletType=DISPLAY;
+            startingdir=@forward{f=4;yo=64};
+            mr=666;
+            scale=0.5,0.5,0.5;
+            mat=ink_sac;
+            model=13370040;
+            interpolation=2;
+            delay=83;
+            v=50;
+            g=0.3;
+            in=400;
+            fo=true;
+            hr=1;
+            vr=1;
+            os=PIGLINMECH_MOUNT_missile_start;
+            ot=PIGLINMECH_MOUNT_missile_tick;
+            oe=PIGLINMECH_MOUNT_missile_end;
+            sE=true;
+            hnp=false;
+            sfo=6;
+            sso=0;
+            syo=6;
+            bulletViewDistance=128} @targetlocation{d=128;yo=32}
+  
+PIGLINMECH_MOUNT_missile_start:
+  Skills:
+  - e:p{p=flash}
+  - e:p{p=end_rod;a=25;s=0.5}
+  
+PIGLINMECH_MOUNT_missile_tick:
+  Skills:
+  - effect:blockmask{m=LIGHT;r=2;d=3;oa=true;na=false}
+  - e:p{p=campfire_cosy_smoke;hs=0.5;vs=0.5;a=25;delay=4}
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.01}
+
+PIGLINMECH_MOUNT_missile_end:
+  Skills:
+  - sound{s=littleroom_piglinmech:mech.rocket_explosion;v=5;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - summon{t=PIGLIN_MECH_explosion_fx} @origin{yo=1}
+  - effect:blockmask{m=LIGHT;r=4;d=40;oa=true;na=false}
+  - explosion{yield=10;bd=true;f=true}
+  
+## DAMAGED ##
+
+PIGLINMECH_MOUNT_damaged:
+  Conditions:
+  #- offgcd true
+  - varequals{var=caster.damaged;val=true} false
+  Skills:
+  - gcd{ticks=60}
+  - partvis{mid=piglin_mech_mount;pid=fire;v=true} @self
+  - skill{s=PIGLINMECH_MOUNT_recoil_big} @pir{r=32}
+  - setspeed{s=0} @self
+  - sound{s=littleroom_piglinmech:mech.body_explode;v=5;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - setspeed{s=0.5;delay=60} @self
+  - e:p{p=flash;a=1} @modelpart{pid=left_arm_bicep}
+  - e:p{p=lava;a=10} @modelpart{pid=left_arm_bicep}
+  - setvar{var=caster.damaged;val=true;type=STRING} @self
+  - changepart{mid=piglin_mech_mount;pid=torso;nmid=piglin_mech_parts;npid=torso} @self
+  - changepart{mid=piglin_mech_mount;pid=engine;nmid=piglin_mech_parts;npid=engine} @self
+  - changepart{mid=piglin_mech_mount;pid=piglin_torso;nmid=piglin_mech_parts;npid=piglin_torso} @self
+  - changepart{mid=piglin_mech_mount;pid=piglin_left_arm;nmid=piglin_mech_parts;npid=piglin_left_arm} @self
+  - changepart{mid=piglin_mech_mount;pid=piglin_head;nmid=piglin_mech_parts;npid=piglin_head} @self
+  - changepart{mid=piglin_mech_mount;pid=piglin_left_ear;nmid=piglin_mech_parts;npid=piglin_left_ear} @self
+  - changepart{mid=piglin_mech_mount;pid=gear_big;nmid=piglin_mech_parts;npid=gear_big} @self
+  - changepart{mid=piglin_mech_mount;pid=left_arm_shoulder;nmid=piglin_mech_parts;npid=left_arm_shoulder} @self
+  - changepart{mid=piglin_mech_mount;pid=left_arm_bicep;nmid=piglin_mech_parts;npid=left_arm_bicep} @self
+  - state{s=damaged} @self
+  
+## DEATH ##
+
+PIGLINMECH_MOUNT_death:
+  Skills:
+  - skill{s=PIGLINMECH_MOUNT_recoil_big} @pir{r=32}
+  - sound{s=littleroom_piglinmech:mech.body_explode;v=5;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - sound{s=littleroom_piglinmech:mech.mech_land;v=5;sc=HOSTILE;pitch=<random.float.0.9to1.1>;delay=38} @self
+  - brightness{b=-1;s=-1} @self
+  - partvis{m=piglin_mech_mount;p=right_leg_shin;child=true} @self
+  - e:p{p=large_smoke;a=1;hs=.15;vs=.15;d=true;dir=0,1,0;repeat=80;repeati=1} @modelpart{pid=right_leg_shin}
+  - e:p{p=flash;a=1} @modelpart{pid=right_leg_shin}
+  - e:p{p=lava;a=10} @modelpart{pid=right_leg_shin}
+  - sound{s=littleroom_piglinmech:mech.movement;v=2;sc=HOSTILE;pitch=<random.float.0.9to1.1>} @self
+  - changepart{mid=piglin_mech_mount;pid=right_leg_thigh;nmid=piglin_mech_parts;npid=right_leg_thigh} @self
+  - totem{dd=60;md=2;oH=PIGLINMECH_MOUNT_death_slam;hr=4;vr=2;drawhitbox=false;repeat=30;repeati=1;delay=30;hnp=true} @modelpart{pid=torso;offset=LOCAL;y=3;z=-2}
+  - delay 120
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=piglin_torso}
+  - e:p{p=poof;a=50;hs=1;vs=1} @modelpart{pid=torso}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=right_arm_bicep}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=left_arm_bicep}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=right_arm_forearm}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=left_arm_forearm}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=right_arm_hand}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=left_arm_hand}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=right_leg_shin}
+  - e:p{p=poof;a=50;hs=.5;vs=.5} @modelpart{pid=left_leg_shin}
+  
+PIGLINMECH_MOUNT_death_slam:
+  Skills:
+  - throw{v=8;vy=8}
+  - basedamage{m=1}

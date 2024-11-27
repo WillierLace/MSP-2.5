@@ -1,0 +1,20 @@
+{
+	"replace": false,
+	"values": [
+		"animated_java:kraken/zzzzzzzz/tick",
+		"animated_java:tentacle/zzzzzzzz/tick",
+		"animated_java:splash/zzzzzzzz/tick",
+		"animated_java:sub/zzzzzzzz/tick",
+		"animated_java:jellyjar/zzzzzzzz/tick",
+		"animated_java:mine/zzzzzzzz/tick",
+		"animated_java:clam/zzzzzzzz/tick",
+		"animated_java:seahorse/zzzzzzzz/tick",
+		"animated_java:seahorse_head/zzzzzzzz/tick",
+		"animated_java:seahorse_horn/zzzzzzzz/tick",
+		"animated_java:seahorse_ear/zzzzzzzz/tick",
+		"animated_java:seahorse_fin/zzzzzzzz/tick",
+		"animated_java:anglerfish/zzzzzzzz/tick",
+		"animated_java:merfolk/zzzzzzzz/tick",
+		"animated_java:jellyfish/zzzzzzzz/tick"
+	]
+}

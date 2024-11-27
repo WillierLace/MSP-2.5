@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.clam.bone.bone2] run data modify entity @s {} merge value {transformation:[-1f,5.343512749254816e-19f,1.2246351413924705e-16f,0f,0f,0.9999904807207345f,-0.004363309284746571f,0.0625f,-1.2246467991473532e-16f,-0.004363309284746571f,-0.9999904807207345f,0f,0f,0f,0f,1f],start_interpolation:0}

@@ -1,0 +1,1 @@
+execute at @s run kill @e[type=item_display,distance=..1]

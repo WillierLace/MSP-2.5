@@ -1,0 +1,1 @@
+execute on passengers run function zzz_devourer_internal:animations/attack/tree/leaf_12_as_bone

@@ -1,0 +1,1 @@
+execute on passengers run function zzz_watcher_internal:animations/shriek/tree/leaf_10_as_bone

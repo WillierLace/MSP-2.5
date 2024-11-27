@@ -1,0 +1,1 @@
+tag @s remove aj.jellyjar.animation.idle

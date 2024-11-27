@@ -1,0 +1,9 @@
+execute as @s if entity @s[nbt={Inventory:[{Slot:0b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.0 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:1b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.1 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:2b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.2 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:3b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.3 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:4b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.4 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:5b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.5 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:6b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.6 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:7b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.7 ddo:antler_stops
+execute as @s if entity @s[nbt={Inventory:[{Slot:8b,tag:{Tags:[antler]}}]}] run item modify entity @s hotbar.8 ddo:antler_stops

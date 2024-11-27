@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"idle":{"loop":true,"override_previous_animation":true,"bones":{"main":{"rotation":[0,0,0],"position":[0,0,0],"scale":1}}},"walk":{"loop":true,"override_previous_animation":true,"bones":{"main":{"rotation":[0,0,0],"position":[0,0,0],"scale":1}}}}}

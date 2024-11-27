@@ -1,0 +1,1 @@
+{"head_rotation":true,"material":"entity_alphatest_change_color_one_sided","blend_transition":true,"per_texture_uv_size":{"blue":[64,64],"cyan":[64,64],"gold":[64,64],"lucy":[64,64],"wild":[64,64]},"binding_bones":{"blue":["body","right_arm","right_leg","left_arm","left_leg","h_head","left_gills","right_gills","right_gills2","right_gills3"]},"anim_textures":{}}

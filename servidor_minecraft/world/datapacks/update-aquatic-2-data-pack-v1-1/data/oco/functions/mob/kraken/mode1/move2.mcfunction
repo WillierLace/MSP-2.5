@@ -1,0 +1,1 @@
+execute as @s at @s run execute as @s at @s if block ~ ~2 ~ water run tp ~ ~0.1 ~

@@ -1,0 +1,136 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "amount": 9,
+                  "name": "minecraft:generic.attack.damage",
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "minecraft:generic.attack.speed",
+                  "amount": -2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [{
+                "text": "Sword of the Deep",
+                "color": "dark_aqua",
+                "bold": false,
+                "italic": false
+              }]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:13370008,Tags:[sword],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "The souls of the long lost",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "text": "power this blade.",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                },
+                {
+                  "text": "Hold sneak to charge up,",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                },
+                {
+                  "text": "then right click to summon",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                },
+                {
+                  "text": "the Warden's Sonic Boom.",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                },
+                {
+                  "text": " ",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                },
+                {
+                  "text": "+9 Attack Damage",
+                  "color": "green",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                },
+                {
+                  "text": "+1.7 Attack Speed",
+                  "color": "green",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

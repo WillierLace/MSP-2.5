@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.clam.animation.idle] run function animated_java:clam/zzzzzzzz/animations/idle/tick
+execute if entity @s[tag=aj.clam.animation.open] run function animated_java:clam/zzzzzzzz/animations/open/tick

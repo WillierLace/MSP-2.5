@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.jellyjar.root] run function animated_java:jellyjar/zzzzzzzz/tick_as_root

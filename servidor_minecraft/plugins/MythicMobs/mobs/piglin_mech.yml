@@ -1,0 +1,128 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+PIGLIN_MECH: 
+  Type: IRON_GOLEM
+  Display: "Piglin Mech"
+  Health: 500
+  Damage: 2
+  AITargetSelectors:
+  - players
+  - villagers
+  - golems
+  DamageModifiers:
+    - FIRE 0.0
+    - SUFFOCATION 0.0
+  Modules:
+    ThreatTable: true
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    FollowRange: 128
+    Despawn: NEVER
+  Skills:
+  - CancelEvent{sync=true} @self ~onInteract
+  - CancelEvent{sync=true} @self ~onAttack
+  - model{m=piglin_mech;usm=true;d=false;lp=true} @self ~onSpawn
+  - model{m=piglin_mech;usm=true;d=false;lp=true} @self ~onLoad
+  - throw{v=3;vy=-1} @eir{r=24;conditions=[ - boundingboxesoverlap]} ~onTimer:1
+  - e:p{p=large_smoke;a=4;d=true;dir=0,1,0;s=0.1;hs=1;vs=1} @modelpart{pid=left_arm_bicep} ~onTimer:1 ?varequals{var=caster.damaged;val=true}
+  - state{s=passive_layer;p=1} @self ~onSpawn
+  - skill{s=PIGLINMECH_spawn} @self ~onSpawn
+  - skill{s=PIGLINMECH_bossbar_damage} @self ~onDamaged
+  - skill{s=PIGLINMECH_swing_1} @target ~onTimer:20
+  - skill{s=PIGLINMECH_swing_2} @target ~onTimer:20
+  - skill{s=PIGLINMECH_slam_front} @target ~onTimer:20
+  - skill{s=PIGLINMECH_slam_front_2} @target ~onTimer:20
+  - skill{s=PIGLINMECH_quick_spin} @target ~onTimer:20
+  - skill{s=PIGLINMECH_long_spin} @target ~onTimer:20
+  - skill{s=PIGLINMECH_long_spin_blink} @self ~onTimer:10
+  - skill{s=PIGLINMECH_slam_right} @trigger ~onDamaged
+  - skill{s=PIGLINMECH_slam_left} @trigger ~onDamaged
+  - skill{s=PIGLINMECH_damaged} @self ~onDamaged <50%
+  - skill{s=PIGLINMECH_leap_check} @target ~onTimer:20
+  - skill{s=PIGLINMECH_leap} @target ~onSignal:LEAP
+  - skill{s=PIGLINMECH_land} @self ~onTimer:1
+  - skill{s=PIGLINMECH_shoulder_laser} @target ~onTimer:20 <85%
+  - skill{s=PIGLINMECH_launch_missile} @target ~onTimer:20 <25%
+  - skill{s=PIGLINMECH_death} @self ~onDeath
+  
+  
+PIGLIN_MECH_ground_crack_fx:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - model{m=piglin_mech_ground_fx;usm=true;step=1;scale=2;d=false} @self ~onSpawn
+  - model{m=piglin_mech_ground_fx;usm=true;step=1;scale=2;d=false} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - remove{delay=40} @self ~onSpawn
+  - velocity{m=set;x=0;y=-100;z=0} @self ~onTimer:1
+  - lockmodel{l=true;delay=5} @self ~onSpawn
+  - spin{duration=1;velocity=<random.float.0to100>} @self ~onSpawn
+  - effect:particle{p=block;m=dirt;a=25;hs=.5;vs=.15} @self ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=24} ~onSpawn
+  
+PIGLIN_MECH_ground_dust_fx:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - model{m=piglinmech_dust_fx;usm=true;d=false} @self ~onSpawn
+  - model{m=piglinmech_dust_fx;usm=true;d=false} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - remove{delay=20} @self ~onSpawn
+  - velocity{m=set;x=0;y=-100;z=0} @self ~onTimer:1
+  - lockmodel{l=true;delay=5} @self ~onSpawn
+  - effect:particle{p=block;m=dirt;a=25;hs=.5;vs=.15} @self ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=24} ~onSpawn
+  
+PIGLIN_MECH_explosion_fx:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - model{m=piglinmech_explosion_fx;usm=true;scale=2;d=false} @self ~onSpawn
+  - model{m=piglinmech_explosion_fx;usm=true;scale=2;d=false} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - remove{delay=40} @self ~onSpawn
+  - ignite{d=60} @eir{r=16} ~onSpawn
+  - damage{a=20} @eir{r=16} ~onSpawn
+  - throw{v=12;vy=3;repeat=5;repeati=1} @pir{r=16} ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=32} ~onSpawn
+  - skill{s=PIGLINMECH_recoil} @pir{r=32} ~onTimer:3
+  - velocity{m=set;x=0;y=-100;z=0} @self ~onTimer:1
+  - lockmodel{l=true;delay=5} @self ~onSpawn
+  - effect:particle{p=block;m=dirt;a=25;hs=.5;vs=.15} @self ~onSpawn
+  - skill{s=PIGLINMECH_recoil_big} @pir{r=24} ~onSpawn
+  
+PIGLINMECH_marker:
+  Type: MARKER
+  Skills:
+  - signal{s=LEAP;delay=5} @parent ~onSpawn
+  
+PIGLINMECH_laser_line:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+    Marker: true
+    Invisible: true
+  Skills:
+  - projectile{v=60;hs=true;oT=[ - e:p{p=lava}];sE=false;mr=16;fo=true} @forward{f=20} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+
+PIGLINMECH_laser_particle:
+  Type: ITEM_DISPLAY
+  Display: "PARTICLE"
+  DisplayOptions:
+    Item: PIGLINMECH_LASER_PARTICLE
+    BlockLight: 15
+    SkyLight: 15
+    Billboard: CENTER
+  Skills:
+  - displaytransformation{action=MULTIPLY;transformation=SCALE;value=0.75,0.75,0.75} @self ~onTimer:1

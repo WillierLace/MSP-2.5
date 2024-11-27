@@ -1,0 +1,1 @@
+function #keeper:on_summon_as_bones

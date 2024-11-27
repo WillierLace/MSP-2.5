@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 2,
+          "name": "minecraft:chests/village/village_desert_house"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 4,
+          "name": "minecraft:chests/village/village_plains_house"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 2,
+          "name": "minecraft:chests/village/village_savanna_house"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/village/village_snowy_house"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/village/village_taiga_house"
+        }
+      ]
+    }
+  ]
+}

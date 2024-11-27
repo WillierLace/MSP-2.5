@@ -1,0 +1,1 @@
+tag @s remove aj.seahorse.animation.idle

@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/duck"},"elements":[{"from":[5.0,6.5,8.0],"to":[11.0,9.5,8.0],"faces":{"south":{"uv":[13.25,2.0,14.75,2.75],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[11.75,2.0,13.25,2.75],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

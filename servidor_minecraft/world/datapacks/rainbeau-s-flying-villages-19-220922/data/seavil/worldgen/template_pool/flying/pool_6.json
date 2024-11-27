@@ -1,0 +1,272 @@
+{
+  "name": "seavil:flying/pool_6",
+  "fallback": "minecraft:empty",
+  "elements": [
+
+	{
+      "weight": 3,
+      "element": {
+        "location": "seavil:flying/platforms/tx/05_end",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 5,
+      "element": {
+        "location": "seavil:flying/platforms/tx/05_end_light",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/tx/05_end_lights",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/tx/21_end_floaters_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/tx/21_end_floaters_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/tx/21_end_floaters_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/tx/21_end_light_floaters_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/tx/21_end_light_floaters_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/tx/21_end_light_floaters_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+
+	
+	
+    {
+      "weight": 4,
+      "element": {
+        "location": "seavil:flying/platforms/t6/15_bridge_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 3,
+      "element": {
+        "location": "seavil:flying/platforms/t6/15_down1_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 3,
+      "element": {
+        "location": "seavil:flying/platforms/t6/15_up1_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t6/22_down2_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t6/22_up2_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t6/17_down2_lt_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t6/17_down2_rt_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t6/17_up2_lt_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t6/17_up2_rt_junction",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },	
+	
+	
+		
+	{
+      "weight": 2,
+      "element": {
+        "location": "seavil:flying/platforms/t6/21_bridge_small",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 2,
+      "element": {
+        "location": "seavil:flying/platforms/t6/21_down1_small",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 2,
+      "element": {
+        "location": "seavil:flying/platforms/t6/21_up1_small",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 2,
+      "element": {
+        "location": "seavil:flying/platforms/t6/23_down2_lt_small",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 2,
+      "element": {
+        "location": "seavil:flying/platforms/t6/23_down2_rt_small",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 2,
+      "element": {
+        "location": "seavil:flying/platforms/t6/23_up2_lt_small",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 2,
+      "element": {
+        "location": "seavil:flying/platforms/t6/23_up2_rt_small",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	
+	
+	
+	
+	{
+      "weight": 5,
+      "element": {
+        "location": "seavil:flying/platforms/t6/25_bridge_medium",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 5,
+      "element": {
+        "location": "seavil:flying/platforms/t6/25_down1_medium",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 5,
+      "element": {
+        "location": "seavil:flying/platforms/t6/25_up1_medium",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+	
+	
+	
+  ]
+}

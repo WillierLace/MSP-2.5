@@ -1,0 +1,1 @@
+execute as @e[type=#keeper:aj_root,tag=aj.keeper.root] run function zzz_keeper_internal:tick_as_root

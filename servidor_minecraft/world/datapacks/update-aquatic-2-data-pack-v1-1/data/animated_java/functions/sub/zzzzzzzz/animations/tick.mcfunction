@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.sub.animation.move] run function animated_java:sub/zzzzzzzz/animations/move/tick

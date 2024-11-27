@@ -1,0 +1,1 @@
+function animated_java:tentacle/zzzzzzzz/animations/attack/tick_animation

@@ -1,0 +1,1 @@
+tag @s remove aj.sub.animation.move

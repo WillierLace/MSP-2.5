@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.qmob_creakingheart.idle": {
+      "loop": true,
+      "bones": {
+        "main": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": 1
+        }
+      }
+    },
+    "animation.qmob_creakingheart.walk": {
+      "loop": true,
+      "bones": {
+        "main": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": 1
+        }
+      }
+    }
+  }
+}

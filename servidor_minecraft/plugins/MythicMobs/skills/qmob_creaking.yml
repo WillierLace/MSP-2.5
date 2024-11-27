@@ -1,0 +1,82 @@
+######### the newest minecraft mob, early ##############
+
+creaking_step:
+  Skills:
+  - sound{s=block.wood.step;sc=master;p=2.0;v=1.0} @self
+  - sound{s=block.sweet_berry_bush.pick_berries;sc=master;p=1.5;v=1.0} @self
+  - sound{s=block.hanging_roots.break;sc=master;p=2.0;v=1.0} @self
+
+creakingSpawn:
+  Conditions:                 # makes sure there's not more than 1 creaking mobs within 32 blocks
+  - mobsInRadius{types=qmob_creaking;amount=>0;radius=32} false
+  Skills:
+  - summon{type=qmob_creaking;amount=1;radius=10} @self  
+
+creakingHeartHurt:
+  - sound{s=block.weeping_vines.break;sc=master;p=1.0;v=1.0} @self
+  - sound{s=block.moss.break;sc=master;p=0.5;v=1.0} @self
+  - sound{s=block.nether_wart.break;sc=master;p=1.0;v=0.5;cd=0.3} @self
+  - sound{s=block.hanging_roots.break;sc=master;p=2.0;v=0.5;cd=0.3} @self
+  - sound{s=particle.soul_escape;sc=master;p=0.5;v=1.0} @self
+  - sound{s=particle.soul_escape;sc=master;p=2.0;v=1.0} @self
+  - sound{s=particle.soul_escape;sc=master;p=1.0;v=1.0} @self
+  - effect:particles{particle=block;m=ACAIA_WOOD;a=10;hs=0.35;vs=0.55;s=0;y=1.0} @self
+  - effect:particles{particle=block;m=DEAD_TUBE_CORAL_BLOCK;a=10;hs=0.35;vs=0.55;s=0;y=1.0} @self
+  - effect:particles{particle=block;m=GILDED_BLACKSTONE;a=2;hs=0.35;vs=0.55;s=0;y=1.0} @self
+
+creakingAttack:
+  Conditions:
+  - haspotioneffect{type=SLOW;level=>0} false
+  Skills:
+  - CancelEvent{sync=true} @self
+  - state{state=attack;li=4;lo=2;speed=1.0} @self # plays the attack animation
+  - delay 4 # waits 4 ticks to sync with the animation
+  - damage{a=10} @trigger # you can change the damage here
+  - sound{s=block.nether_wart.break;sc=master;p=1.0;v=0.5;cd=0.3} @self
+  - sound{s=block.hanging_roots.break;sc=master;p=2.0;v=0.5;cd=0.3} @self
+
+creakingHurt:
+  Conditions:
+  - isParentAlive castInstead creakingSafe # does this if the heart block is still alive
+  Skills:
+  - sound{s=entity.vex.hurt;sc=master;p=0.55;v=0.35} @self
+  - sound{s=entity.breeze.land;sc=master;p=0.5;v=1.0} @self
+  - sound{s=block.weeping_vines.break;sc=master;p=1.0;v=1.0} @self
+  - sound{s=block.moss.break;sc=master;p=0.5;v=1.0} @self
+  - sound{s=block.nether_wart.break;sc=master;p=1.0;v=0.5;cd=0.3} @self
+  - sound{s=block.hanging_roots.break;sc=master;p=2.0;v=0.5;cd=0.3} @self
+  - sound{s=particle.soul_escape;sc=master;p=0.5;v=1.0} @self
+  - sound{s=particle.soul_escape;sc=master;p=2.0;v=1.0} @self
+  - sound{s=particle.soul_escape;sc=master;p=1.0;v=1.0} @self
+  - effect:particles{particle=block;m=ACAIA_WOOD;a=10;hs=0.35;vs=0.55;s=0;y=1.0} @self
+  - effect:particles{particle=block;m=DEAD_TUBE_CORAL_BLOCK;a=10;hs=0.35;vs=0.55;s=0;y=1.0} @self
+  - effect:particles{particle=block;m=GILDED_BLACKSTONE;a=2;hs=0.35;vs=0.55;s=0;y=1.0} @self
+  - damage{a=2;pi=true;pk=true} @self # removes itself when hit
+
+creakingSafe: # this stops the mob from being hurt
+  Cooldown: 0.0
+  Skills:
+  - CancelEvent{sync=true} @self
+  - state{state=hurt;li=2;lo=2;speed=1.0} @self # the hurt animation
+  - sound{s=entity.player.attack.nodamage;sc=master;p=<random.float.1.05to1.10>;v=1.15;cd=0.3} @self
+  - sound{s=block.weeping_vines.break;sc=master;p=1.0;v=1.0;cd=0.3} @self
+  - sound{s=block.moss.break;sc=master;p=2.0;v=0.5;cd=0.3} @self
+  - sound{s=block.nether_wart.break;sc=master;p=1.0;v=0.5;cd=0.3} @self
+  - sound{s=block.hanging_roots.break;sc=master;p=2.0;v=0.5;cd=0.3} @self
+  - particleline{particle=TRIAL_SPAWNER_DETECTION;amount=1;syo=2.05;hs=0.3;vs=0.3;repeat=2;repeatInterval=10} @parent
+  - particleline{particle=TOWN_AURA;amount=1;syo=2.05;hs=0.3;vs=0.3;repeat=20;repeatInterval=1} @parent
+
+creakingView:
+  TriggerConditions:
+  - fieldofview{angle=180} orElseCast creakingUnfreeze
+  Skills:
+  - potion{type=SLOW;duration=12;level=10;p=false} @trigger
+  - lockhead{lp=true;ly=true} @trigger
+  - lockhead{lp=true;ly=true} @trigger
+
+creakingUnfreeze: # stops the mob from moving if the target is within field of view
+  Skills:
+  - potionclear{type=SLOW} @trigger
+  - lockhead{lp=false;ly=false} @trigger
+  - lockhead{lp=false;ly=false} @trigger
+  

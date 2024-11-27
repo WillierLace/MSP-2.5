@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.splash.bone.bone2] run data modify entity @s {} merge value {transformation:[-0.14548405248741458f,0f,0.8790426231296726f,0f,0f,2.092720000000001f,0f,0f,-0.9185501567534782f,0f,-0.13922667388580534f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.splash.bone.bone] run data modify entity @s {} merge value {transformation:[-0.14548405248741458f,0f,0.8790426231296726f,0f,0f,1.4800000000000004f,0f,0f,-0.9185501567534782f,0f,-0.13922667388580534f,0f,0f,0f,0f,1f],start_interpolation:0}

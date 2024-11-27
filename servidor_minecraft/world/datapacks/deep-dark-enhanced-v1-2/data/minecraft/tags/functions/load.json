@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"ddo:load",
+		"zzz_altar_internal:load",
+		"zzz_keeper_internal:load",
+		"zzz_devourer_internal:load",
+		"zzz_watcher_internal:load",
+		"zzz_spawner_internal:load"
+	]
+}

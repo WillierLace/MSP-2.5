@@ -1,0 +1,2 @@
+function zzz_devourer_internal:animations/idle/pause
+function zzz_devourer_internal:animations/attack/pause

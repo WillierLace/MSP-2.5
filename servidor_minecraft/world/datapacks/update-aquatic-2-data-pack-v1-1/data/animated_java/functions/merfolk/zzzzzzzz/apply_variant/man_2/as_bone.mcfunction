@@ -1,0 +1,11 @@
+execute if entity @s[tag=aj.merfolk.bone.t3] run data modify entity @s item.tag.CustomModelData set value 13
+execute if entity @s[tag=aj.merfolk.bone.t2] run data modify entity @s item.tag.CustomModelData set value 14
+execute if entity @s[tag=aj.merfolk.bone.t1] run data modify entity @s item.tag.CustomModelData set value 15
+execute if entity @s[tag=aj.merfolk.bone.nose] run data modify entity @s item.tag.CustomModelData set value 16
+execute if entity @s[tag=aj.merfolk.bone.ear_l] run data modify entity @s item.tag.CustomModelData set value 17
+execute if entity @s[tag=aj.merfolk.bone.ear_r] run data modify entity @s item.tag.CustomModelData set value 18
+execute if entity @s[tag=aj.merfolk.bone.head] run data modify entity @s item.tag.CustomModelData set value 19
+execute if entity @s[tag=aj.merfolk.bone.trident] run data modify entity @s item.tag.CustomModelData set value 20
+execute if entity @s[tag=aj.merfolk.bone.bone3] run data modify entity @s item.tag.CustomModelData set value 21
+execute if entity @s[tag=aj.merfolk.bone.armhands] run data modify entity @s item.tag.CustomModelData set value 22
+execute if entity @s[tag=aj.merfolk.bone.bone] run data modify entity @s item.tag.CustomModelData set value 23

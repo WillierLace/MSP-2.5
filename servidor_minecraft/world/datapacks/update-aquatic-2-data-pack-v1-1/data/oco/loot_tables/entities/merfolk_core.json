@@ -1,0 +1,127 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Helm of the Sea",
+                    "color": "aqua",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Grants the Wearer the power",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "of Conduits.",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": " ",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "Depth Strider III",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "Grants Conduit Power",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Cannot be enchanted.",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": true
+                  },
+                  {
+                    "text": "(Warning: enchanting this",
+                    "color": "yellow",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "will result in lost levels!)",
+                    "color": "yellow",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 2,
+                    "operation": "addition",
+                    "slot": "head"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:13370012,tag:{Tags:[oco.helmet]},Enchantments:[{id:depth_strider,lvl:3}],HideFlags:1}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

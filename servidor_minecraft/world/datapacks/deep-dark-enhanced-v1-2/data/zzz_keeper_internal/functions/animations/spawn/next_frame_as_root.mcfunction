@@ -1,0 +1,1 @@
+function zzz_keeper_internal:animations/spawn/tick_animation

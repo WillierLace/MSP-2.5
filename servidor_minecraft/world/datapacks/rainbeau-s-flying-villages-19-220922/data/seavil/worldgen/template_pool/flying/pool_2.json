@@ -1,0 +1,42 @@
+{
+  "name": "seavil:flying/pool_2",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t2/21_center_upper",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t2/21_center_lower",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t2/21_center_upper_illager",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "seavil:flying/platforms/t2/21_center_lower_illager",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

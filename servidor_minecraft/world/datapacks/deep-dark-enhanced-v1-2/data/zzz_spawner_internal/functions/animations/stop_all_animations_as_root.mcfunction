@@ -1,0 +1,1 @@
+function zzz_spawner_internal:animations/heartbeat.idle/pause

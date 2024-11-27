@@ -1,0 +1,110 @@
+Mono:
+  Type: WOLF
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=mono;n=true} @self ~onSpawn
+
+Orangutan:
+  Type: PANDA
+  Healt: 80
+  Damage: 2
+  AI:
+    AttackRange: 2
+    Aggresive: false  
+  Skills:
+  - model{mid=orangutan;n=true} @self ~onSpawn
+  - state{mid=orangutan;s=attack;li=0;lo=0} @self ~onAttack
+
+Boarbarian:
+  Type: IRON_GOLEM
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=Boarbarian;n=true} @self ~onSpawn
+  - state{mid=Boarbarian;s=attack;li=0;lo=0} @self ~onAttack
+
+Lobon:
+  Type: WOLF
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=Nwolf;n=true} @self ~onSpawn
+  - state{mid=Nwolf;s=attack;li=0;lo=0} @self ~onAttack
+  
+Rino:
+  Type: RAVAGER
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=rino;n=true} @self ~onSpawn
+  - state{mid=rino;s=attack;li=0;lo=0} @self ~onAttack
+
+
+Brute:
+  Type: IRON_GOLEM
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=Brute;n=true} @self ~onSpawn
+  - state{mid=Brute;s=attack;li=0;lo=0} @self ~onAttack
+
+
+Capybara:
+  Type: PIG
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=capybara;n=true} @self ~onSpawn
+
+
+Pato:
+  Type: CHICKEN
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=duck;n=true} @self ~onSpawn
+
+Pinguino:
+  Type: VILLAGER
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=Pinguino;n=true} @self ~onSpawn
+ 
+Oso:
+  Type: POLAR_BEAR
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=Oso;n=true} @self ~onSpawn
+  - state{mid=Oso;s=attack;li=0;lo=0} @self ~onAttack
+
+Elefante:
+  Type: RAVAGER
+  Healt: 20
+  Damage: 2
+  Skills:
+  - model{mid=Elefante;n=true} @self ~onSpawn
+  - state{mid=Elefante;s=attack;li=0;lo=0} @self ~onAttack
+  
+  
+Canguro:
+  Type: WOLF 
+  Healt: 20
+  Damage: 1
+  Skills:
+  - model{mid=Canguro;n=true} @self ~onSpawn
+  - state{mid=Canguro;s=attack;li=0;lo=0} @self ~onAttack
+
+Cocodrilo:
+  Type: GLOW_SQUID
+  Healt: 20
+  Damage: 5
+  Options:
+    PreventDrowning: true
+  AI:
+   Aggressive: true
+  Skills:
+  - model{mid=Cocod;n=true} @self ~onSpawn
+  - state{mid=Canguro;s=attack;li=0;lo=0} @self ~onAttack

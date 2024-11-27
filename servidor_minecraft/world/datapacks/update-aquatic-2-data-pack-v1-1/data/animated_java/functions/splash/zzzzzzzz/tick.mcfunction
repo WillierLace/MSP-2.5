@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.splash.root] run function animated_java:splash/zzzzzzzz/tick_as_root

@@ -1,0 +1,1 @@
+function zzz_devourer_internal:animations/idle/tick_animation

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:tentacle/zzzzzzzz/animations/attack/tree/leaf_18_as_bone

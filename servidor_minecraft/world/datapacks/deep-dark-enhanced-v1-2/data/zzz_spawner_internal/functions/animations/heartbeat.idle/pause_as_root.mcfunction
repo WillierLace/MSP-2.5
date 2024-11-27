@@ -1,0 +1,1 @@
+tag @s remove aj.spawner.animation.heartbeat.idle

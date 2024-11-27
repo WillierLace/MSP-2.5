@@ -1,0 +1,1 @@
+function animated_java:merfolk/zzzzzzzz/animations/attack/tick_animation

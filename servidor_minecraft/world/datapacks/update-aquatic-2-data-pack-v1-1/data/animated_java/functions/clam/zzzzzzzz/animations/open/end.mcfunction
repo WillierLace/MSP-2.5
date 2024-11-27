@@ -1,0 +1,3 @@
+execute if score @s aj.clam.animation.open.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:clam/zzzzzzzz/animations/open/end_loop
+execute if score @s aj.clam.animation.open.loop_mode = $aj.loop_mode.once aj.i run function animated_java:clam/animations/open/stop
+execute if score @s aj.clam.animation.open.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:clam/animations/open/pause

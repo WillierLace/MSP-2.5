@@ -1,0 +1,45 @@
+qmob_creaking:
+  Type: HUSK
+  Display: 'Creaking'  # change this if you want
+  Health: 1 # change this if you want
+  Damage: 10 # make this whatever you want
+  Options:
+    Despawn: false
+    Silent: true
+    PreventSunburn: true
+    PreventTransformation: true
+    PreventOtherDrops: true
+    FollowRange: 32
+    Collidable: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1.0
+    MovementSpeed: 0.333
+  Drops: # put whatever you want here
+  DamageModifiers: # put whatever you want here
+  Skills:
+  ####### Misc
+  - model{mid=qmob_creaking;scale=1;save=true} @self ~onSpawn # gives it the custom model
+  - model{mid=qmob_creaking;scale=1;save=true} @self ~onLoad # gives it the custom model 
+  - brightness{p=eyes;b=15;s=15} @self ~onSpawn # gives it glowing eyes
+  - brightness{p=eyes;b=15;s=15} @self ~onLoad
+  - skill{s=creakingHurt;sync=true} @self ~onHurt # does the special creaking ability when hurt
+  - skill{s=creakingAttack;sync=true} @self ~onAttack # replaces the vanilla attack with this one
+  - CancelEvent{sync=true} @self ~onAttack
+  - sudoskill{s=creakingView;cat=true} @PIR{r=16} ~onTimer:10 # this checks if the player is within a field of view
+
+qmob_creakingHeart:
+  Type: PIG
+  Health: 20
+  Options:
+   Despawn: false
+   Silent: true
+   NoAI: true
+   PreventTransformation: true
+   PreventOtherDrops: true
+  Drops: # put whatever you want here
+  Skills:
+  ####### Misc
+  - model{mid=qmob_creakingheart;scale=1;save=true} @self ~onSpawn # gives it the custom model
+  - model{mid=qmob_creakingheart;scale=1;save=true} @self ~onLoad # gives it the custom model 
+  - skill{s=creakingSpawn} @self ~onTimer:600 # will spawn a new creaking every 600 ticks or 30 seconds
+  - damage{a=100;pi=true;pk=true} @children ~onDeath

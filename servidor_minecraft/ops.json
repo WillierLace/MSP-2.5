@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "13bc203d-9018-3bc0-a687-0ba5fbfc47be",
+    "name": "YonderSky",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "00000000-0000-0000-0009-01f8d40930a8",
+    "name": ".LiveBowl1733410",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "2ee567be-5570-4271-b209-deb3d04bd6b9",
+    "name": "yondersky",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "00000000-0000-0000-0009-01f93cdefcc5",
+    "name": ".YonderSky330854",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

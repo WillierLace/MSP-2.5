@@ -1,0 +1,1 @@
+execute at @e[tag=aj.keeper.animation.summon] run particle block sculk 1 1 1 1 1 1 1 150

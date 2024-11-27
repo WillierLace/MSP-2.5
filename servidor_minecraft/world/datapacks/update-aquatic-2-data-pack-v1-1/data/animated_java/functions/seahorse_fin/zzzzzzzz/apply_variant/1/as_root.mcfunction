@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:seahorse_fin/zzzzzzzz/apply_variant/1/as_bone

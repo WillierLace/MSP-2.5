@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.seahorse.animation.idle] run function animated_java:seahorse/zzzzzzzz/animations/idle/tick

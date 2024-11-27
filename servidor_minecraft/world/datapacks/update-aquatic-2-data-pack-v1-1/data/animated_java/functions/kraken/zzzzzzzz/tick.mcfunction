@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.kraken.root] run function animated_java:kraken/zzzzzzzz/tick_as_root

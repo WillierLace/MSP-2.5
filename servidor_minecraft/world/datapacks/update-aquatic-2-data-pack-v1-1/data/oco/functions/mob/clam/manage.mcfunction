@@ -1,0 +1,1 @@
+execute at @a run execute as @e[tag=oco.clam.interaction,distance=..10] run execute as @s at @s if data entity @s interaction run function oco:mob/clam/interaction

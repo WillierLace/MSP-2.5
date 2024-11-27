@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.jellyjar.animation.idle] run function animated_java:jellyjar/zzzzzzzz/animations/idle/tick

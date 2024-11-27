@@ -1,0 +1,1 @@
+function #watcher:on_summon_as_locators

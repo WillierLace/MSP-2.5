@@ -1,0 +1,2 @@
+scoreboard players set @s aj.seahorse_head.rig_loaded 1
+execute unless score @s aj.seahorse_head.export_version = aj.seahorse_head.export_version aj.i at @s run function animated_java:seahorse_head/zzzzzzzz/mark_outdated_rig

@@ -1,0 +1,1 @@
+give @s book{CustomModelData:13370010,Tags:["oco.pearl"],display:{Name:'[{"text":"Pearl","italic":false}]',Lore:['[{"text":"","italic":false}]','[{"text":"The merfolk will trade","italic":false,"color":"gray"}]','[{"text":"for these.","italic":false,"color":"gray"}]']}} 1

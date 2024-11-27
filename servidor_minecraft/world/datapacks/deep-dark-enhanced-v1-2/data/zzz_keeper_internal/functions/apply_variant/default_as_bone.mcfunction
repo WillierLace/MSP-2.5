@@ -1,0 +1,11 @@
+execute if entity @s[tag=aj.keeper.bone.bone2] run data modify entity @s item.tag.CustomModelData set value 17
+execute if entity @s[tag=aj.keeper.bone.rightarm] run data modify entity @s item.tag.CustomModelData set value 18
+execute if entity @s[tag=aj.keeper.bone.bone] run data modify entity @s item.tag.CustomModelData set value 19
+execute if entity @s[tag=aj.keeper.bone.leftarm] run data modify entity @s item.tag.CustomModelData set value 20
+execute if entity @s[tag=aj.keeper.bone.head] run data modify entity @s item.tag.CustomModelData set value 21
+execute if entity @s[tag=aj.keeper.bone.heart] run data modify entity @s item.tag.CustomModelData set value 22
+execute if entity @s[tag=aj.keeper.bone.leftrib] run data modify entity @s item.tag.CustomModelData set value 23
+execute if entity @s[tag=aj.keeper.bone.rightrib] run data modify entity @s item.tag.CustomModelData set value 24
+execute if entity @s[tag=aj.keeper.bone.torso] run data modify entity @s item.tag.CustomModelData set value 25
+execute if entity @s[tag=aj.keeper.bone.leftleg] run data modify entity @s item.tag.CustomModelData set value 26
+execute if entity @s[tag=aj.keeper.bone.rightleg] run data modify entity @s item.tag.CustomModelData set value 27

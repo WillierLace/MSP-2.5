@@ -1,0 +1,204 @@
+{
+  "name": "seavil:zoo_cage",
+  "fallback": "minecraft:empty",
+  "elements": [
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/creeper",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 2,
+      "element": {
+        "location": "seavil:entities/critters/fox_red_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 2,
+      "element": {
+        "location": "seavil:entities/critters/fox_snow_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/llama_brown",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/llama_creamy",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/llama_gray",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/llama_white",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/mooshroom",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/ocelot_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/panda_lazy",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/panda_normal",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/panda_playful",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/panda_worried",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/polar_bear",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/rabbit_killer",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/skeleton",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 2,
+      "element": {
+        "location": "seavil:entities/critters/spiders_both",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/spider_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/cave_spider_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/wolf_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/zombie",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 4,
+      "element": {
+        "location": "seavil:entities/critters/zombified_piglin",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

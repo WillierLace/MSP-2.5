@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.spawner.animation.heartbeat.idle] run function zzz_spawner_internal:animations/heartbeat.idle/tick

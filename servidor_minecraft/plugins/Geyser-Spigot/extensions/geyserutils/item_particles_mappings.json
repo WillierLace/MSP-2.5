@@ -1,0 +1,5 @@
+{
+  "minecraft:stone": {
+    "10001": "custom:test"
+  }
+}

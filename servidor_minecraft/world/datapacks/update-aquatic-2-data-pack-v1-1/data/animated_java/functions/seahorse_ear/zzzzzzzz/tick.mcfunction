@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.seahorse_ear.root] run function animated_java:seahorse_ear/zzzzzzzz/tick_as_root

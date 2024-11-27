@@ -1,0 +1,1 @@
+execute as @e[type=#devourer:aj_root,tag=aj.devourer.root] run function zzz_devourer_internal:tick_as_root

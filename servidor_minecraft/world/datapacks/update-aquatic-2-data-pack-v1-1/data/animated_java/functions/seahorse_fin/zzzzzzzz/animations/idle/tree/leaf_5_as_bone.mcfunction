@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.seahorse_fin.bone.bone] run data modify entity @s {} merge value {transformation:[-1f,0f,1.2246467991473532e-16f,-1.0283838707081089e-17f,0f,1f,0f,0.01420666443661392f,-1.2246467991473532e-16f,0f,-1f,0.08397391569749824f,0f,0f,0f,1f],start_interpolation:0}

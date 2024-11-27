@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"ddo:tick",
+		"zzz_altar_internal:tick",
+		"zzz_keeper_internal:tick",
+		"zzz_devourer_internal:tick",
+		"zzz_watcher_internal:tick",
+		"zzz_spawner_internal:tick"
+	]
+}

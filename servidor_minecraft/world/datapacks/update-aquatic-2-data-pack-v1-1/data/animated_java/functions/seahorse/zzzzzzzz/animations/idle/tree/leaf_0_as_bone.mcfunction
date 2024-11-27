@@ -1,0 +1,10 @@
+execute if entity @s[tag=aj.seahorse.locator_origin.head] at @s on origin run tp @s ^0 ^0.0625 ^0.25 ~90 ~0
+execute if entity @s[tag=aj.seahorse.locator_origin.ear] at @s on origin run tp @s ^0 ^0.9375 ^0.1875 ~90 ~0
+execute if entity @s[tag=aj.seahorse.locator_origin.horn] at @s on origin run tp @s ^0 ^0.9375 ^0.1875 ~90 ~0
+execute if entity @s[tag=aj.seahorse.locator_origin.fin] at @s on origin run tp @s ^0 ^-0.125 ^-0.0625 ~90 ~0
+execute if entity @s[tag=aj.seahorse.bone.bone6] run data modify entity @s {} merge value {transformation:[8.157109914232845e-17f,-5.711669851950999e-17f,1f,1.9267272372471696e-17f,-0.5735764363510462f,-0.8191520442889917f,0f,-0.498807968931801f,0.8191520442889917f,-0.5735764363510462f,-9.957992501029599e-17f,0.19348550795232644f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.seahorse.bone.bone5] run data modify entity @s {} merge value {transformation:[-6.062041744984903e-17f,-7.900206613286903e-17f,1f,1.947409908482601e-17f,-0.7933533402912352f,0.6087614290087207f,0f,-0.65698625f,-0.6087614290087207f,-0.7933533402912352f,-9.957992501029599e-17f,0.1955625f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.seahorse.bone.bone4] run data modify entity @s {} merge value {transformation:[-9.957992501029599e-17f,0f,1f,0f,0f,1f,0f,-0.75f,-1f,0f,-9.957992501029599e-17f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.seahorse.bone.bone3] run data modify entity @s {} merge value {transformation:[-9.957992501029599e-17f,0f,1f,-1.5446153355612666e-17f,0f,1f,0f,-0.60544625f,-1f,0f,-9.957992501029599e-17f,-0.155113125f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.seahorse.bone.bone2] run data modify entity @s {} merge value {transformation:[-9.957992501029599e-17f,0f,1f,-1.2606196131772158e-17f,0f,1f,0f,-0.387285f,-1f,0f,-9.957992501029599e-17f,-0.12659375f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.seahorse.bone.bone] run data modify entity @s {} merge value {transformation:[-9.957992501029599e-17f,0f,1f,0f,0f,1f,0f,0f,-1f,0f,-9.957992501029599e-17f,0f,0f,0f,0f,1f],start_interpolation:0}

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:clam/zzzzzzzz/apply_variant/no_pearl/as_bone

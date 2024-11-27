@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "ModelEngine",
+    "description": "ModelEngine For Geyser",
+    "uuid": "a2e923f8-bcf9-4c77-9b9a-bf9ad30b4ada",
+    "version": [0, 0, 1]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "description": "ModelEngine",
+      "uuid": "7e3a81c1-e6f9-46c9-b6b1-55034da126dd",
+      "version": [0, 0, 1]
+    }
+  ]
+}

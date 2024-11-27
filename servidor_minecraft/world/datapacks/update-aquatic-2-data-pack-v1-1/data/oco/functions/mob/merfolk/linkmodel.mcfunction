@@ -1,0 +1,5 @@
+execute as @e[tag=aj.merfolk.root] run execute as @s at @s if score @s oco.id = @e[tag=oco.merfolk,sort=nearest,limit=1] oco.id run execute as @s at @e[tag=oco.merfolk,sort=nearest,limit=1] run tp @s ~ ~ ~
+execute as @e[tag=oco.merfolk.interaction] run execute as @s at @s if score @s oco.id = @e[tag=oco.merfolk,sort=nearest,limit=1] oco.id run execute as @s at @e[tag=oco.merfolk,sort=nearest,limit=1] run tp @s ~ ~ ~
+execute as @e[tag=oco.merfolk.interaction] run execute as @s at @s if score @s oco.id = @e[tag=oco.merfolk,sort=nearest,limit=1] oco.id run execute as @s at @e[tag=oco.merfolk,sort=nearest,limit=1] run tp @s ~ ~ ~
+
+execute as @e[type=item_display,tag=aj.merfolk.root] run execute as @s at @s run data modify entity @s Rotation set from entity @e[tag=oco.merfolk,distance=..3,limit=1] Rotation

@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "seavil:setup_flying"
+  }
+}

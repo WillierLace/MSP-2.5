@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.sub.bone.prop] run data modify entity @s item.tag.CustomModelData set value 4
+execute if entity @s[tag=aj.sub.bone.bone] run data modify entity @s item.tag.CustomModelData set value 5

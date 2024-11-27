@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.devourer.animation.idle] run function zzz_devourer_internal:animations/idle/tick
+execute if entity @s[tag=aj.devourer.animation.attack] run function zzz_devourer_internal:animations/attack/tick

@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.jellyfish.bone.bone2] run data modify entity @s {} merge value {transformation:[-1.125f,0f,1.3777276490407724e-16f,0f,0f,0.9775875000000003f,0f,-0.6501718750000001f,-1.3777276490407724e-16f,0f,-1.125f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.jellyfish.bone.bone] run data modify entity @s {} merge value {transformation:[-1.125f,0f,1.3777276490407724e-16f,0f,0f,0.9950000000000001f,0f,-0.6843750000000001f,-1.3777276490407724e-16f,0f,-1.125f,0f,0f,0f,0f,1f],start_interpolation:0}

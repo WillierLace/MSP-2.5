@@ -1,0 +1,1 @@
+function zzz_keeper_internal:animations/roar/tick_animation

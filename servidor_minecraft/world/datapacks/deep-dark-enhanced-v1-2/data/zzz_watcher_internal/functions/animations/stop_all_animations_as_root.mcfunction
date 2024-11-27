@@ -1,0 +1,2 @@
+function zzz_watcher_internal:animations/idle/pause
+function zzz_watcher_internal:animations/shriek/pause

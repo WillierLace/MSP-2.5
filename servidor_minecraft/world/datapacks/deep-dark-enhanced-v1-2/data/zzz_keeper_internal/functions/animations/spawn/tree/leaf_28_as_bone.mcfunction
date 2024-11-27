@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.keeper.bone.leftleg] run data modify entity @s {} merge value {transformation:[-1f,0f,1.2246467991473532e-16f,4.4010744344358005e-17f,0f,1f,0f,-1.8046875f,-1.2246467991473532e-16f,0f,-1f,-0.359375f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.keeper.bone.rightleg] run data modify entity @s {} merge value {transformation:[-1f,0f,1.2246467991473532e-16f,0.06250000000000006f,0f,1f,0f,-1.7890625f,-1.2246467991473532e-16f,0f,-1f,-0.3984375f,0f,0f,0f,1f],start_interpolation:0}

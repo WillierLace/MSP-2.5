@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.kraken.animation.idle] run function animated_java:kraken/zzzzzzzz/animations/idle/tick

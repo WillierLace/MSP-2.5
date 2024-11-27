@@ -1,0 +1,1 @@
+function animated_java:kraken/zzzzzzzz/animations/idle/tick_animation

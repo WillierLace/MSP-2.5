@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.jellyfish.root] run function animated_java:jellyfish/zzzzzzzz/tick_as_root

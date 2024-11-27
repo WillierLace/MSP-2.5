@@ -1,0 +1,1 @@
+function #devourer:on_summon_as_bones

@@ -1,0 +1,6 @@
+function zzz_keeper_internal:animations/idle/pause
+function zzz_keeper_internal:animations/walk/pause
+function zzz_keeper_internal:animations/run/pause
+function zzz_keeper_internal:animations/roar/pause
+function zzz_keeper_internal:animations/spawn/pause
+function zzz_keeper_internal:animations/attack/pause

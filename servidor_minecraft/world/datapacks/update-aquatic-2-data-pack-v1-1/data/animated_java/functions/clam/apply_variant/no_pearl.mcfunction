@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.clam.root] run function animated_java:clam/zzzzzzzz/apply_variant/no_pearl/as_root
+execute if entity @s[tag=!aj.clam.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:clam/apply_variant/no_pearl ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

@@ -1,0 +1,1 @@
+function animated_java:seahorse_fin/zzzzzzzz/animations/idle/tick_animation

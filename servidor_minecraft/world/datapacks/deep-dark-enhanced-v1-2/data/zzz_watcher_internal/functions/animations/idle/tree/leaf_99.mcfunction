@@ -1,0 +1,1 @@
+execute on passengers run function zzz_watcher_internal:animations/idle/tree/leaf_99_as_bone

@@ -1,0 +1,60 @@
+{
+  "name": "seavil:aquarium_axolotl",
+  "fallback": "minecraft:empty",
+  "elements": [
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/axolotl_cyan",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/axolotl_gold",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/axolotl_lucy",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 1,
+      "element": {
+        "location": "seavil:entities/critters/axolotl_wild",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 2,
+      "element": {
+        "location": "seavil:entities/critters/dolphin",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    { 
+      "weight": 2,
+      "element": {
+        "location": "seavil:entities/critters/turtle",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

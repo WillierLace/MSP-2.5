@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": ["minecraft:deep_ocean","minecraft:deep_frozen_ocean","minecraft:deep_lukewarm_ocean","minecraft:deep_cold_ocean"],
+  "project_start_to_heightmap": "OCEAN_FLOOR",
+  "start_height": {"absolute": -10},
+  "max_distance_from_center": 116,
+  "size": 7,
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_box",
+  "start_pool": "oco:start/coral_forest",
+  "step": "surface_structures",
+  "use_expansion_hack": false
+}

@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:slime_spawn_egg",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [{
+                    "text": "Soul Spawner",
+                    "color": "dark_aqua",
+                    "bold": false,
+                    "italic": false
+                  }]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:1337004,EntityTag:{id:\"minecraft:slime\",Size:0,Health:5,NoAI:1b,NoGravity:1b,DeathLootTable:\"ddo:entities/keeper\",PersistenceRequired:1b,Silent:1b,Tags:[\"spawner\"],ActiveEffects:[{Id:14,Duration:2,Amplifier:1,ShowParticles:0b}],Attributes:[{Name:\"generic.max_health\",Base:5f}]}}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Thus block swallows mob drops on",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "the ground near it and revives the",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "mob if came from.",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,1 @@
+function animated_java:sub/zzzzzzzz/animations/move/tick_animation

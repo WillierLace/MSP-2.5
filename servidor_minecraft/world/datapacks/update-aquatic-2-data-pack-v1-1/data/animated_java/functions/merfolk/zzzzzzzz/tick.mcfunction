@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.merfolk.root] run function animated_java:merfolk/zzzzzzzz/tick_as_root

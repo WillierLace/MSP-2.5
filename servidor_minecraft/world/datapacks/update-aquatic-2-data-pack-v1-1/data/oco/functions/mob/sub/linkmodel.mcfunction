@@ -1,0 +1,3 @@
+execute as @e[tag=aj.sub.root] run execute as @s at @s if score @s oco.id = @e[tag=oco.sub,sort=nearest,limit=1] oco.id run execute as @s at @e[tag=oco.sub,sort=nearest,limit=1] run tp @s ~ ~1 ~
+execute as @e[tag=aj.sub.root] run execute as @s at @s run data modify entity @s Rotation[0] set from entity @e[type=skeleton_horse,tag=oco.sub,sort=nearest,limit=1] Rotation[0]
+execute as @e[tag=aj.sub.root] run data modify entity @s Rotation[1] set value 0f

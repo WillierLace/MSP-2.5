@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/alligator"},"elements":[{"from":[2.0,8.0,1.0],"to":[14.0,8.0,13.0],"faces":{"up":{"uv":[1.5,8.125,3.0,6.625],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[3.0,6.625,4.5,8.125],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,101 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Tags:[oco.bulb],CustomModelData:13370011}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Illicium",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [
+                    {
+                      "text": " "
+                    },
+                    {
+                      "text": "The bioluminescent bulb",
+                      "color": "gray",
+                      "bold": false,
+                      "italic": false,
+                      "underlined": false,
+                      "strikethrough": false,
+                      "obfuscated": false
+                    }
+                  ],
+                  {
+                    "text": "of the Anglerfish.",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Considered a delicacy by",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "the Merfolk. They will trade",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "better quality items for it.",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.5
+          }
+        ]
+      }
+    ]
+  }
+  
+  

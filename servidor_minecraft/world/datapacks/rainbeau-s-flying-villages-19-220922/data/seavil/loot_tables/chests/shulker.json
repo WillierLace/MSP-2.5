@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/village/village_plains_house"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/simple_dungeon"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/shipwreck_map"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/shipwreck_supply"
+        },
+        {
+          "type": "minecraft:loot_table",
+		  "weight": 1,
+          "name": "minecraft:chests/shipwreck_treasure"
+        }
+      ]
+    }
+  ]
+}

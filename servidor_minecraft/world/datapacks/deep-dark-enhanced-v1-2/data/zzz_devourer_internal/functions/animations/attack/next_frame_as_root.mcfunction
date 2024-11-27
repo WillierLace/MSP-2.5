@@ -1,0 +1,1 @@
+function zzz_devourer_internal:animations/attack/tick_animation

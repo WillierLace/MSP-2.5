@@ -1,0 +1,2 @@
+scoreboard players set @s aj.jellyfish.rig_loaded 1
+execute unless score @s aj.jellyfish.export_version = aj.jellyfish.export_version aj.i at @s run function animated_java:jellyfish/zzzzzzzz/mark_outdated_rig

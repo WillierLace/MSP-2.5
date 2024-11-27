@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..110 run function zzz_spawner_internal:animations/heartbeat.idle/tree/branch_0_110
