@@ -629,3 +629,12 @@ java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.RecipeChoice
 [12:07:20] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Elefante
 [12:07:39] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn LobonRino
 [12:08:32] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Rino
+[12:09:50] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Brute
+[12:10:14] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Boarbarian
+[12:10:58] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Brute
+[12:11:07] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Boarbarian
+[12:12:30] [Server thread/INFO]: YonderSky issued server command: /mm mob killall
+[12:13:00] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Boarbarian
+[12:13:37] [Server thread/INFO]: YonderSky issued server command: /mm mob spawn Pato
+[12:14:51] [Server thread/INFO]: YonderSky lost connection: Timed out
+[12:14:51] [Server thread/INFO]: YonderSky left the game
